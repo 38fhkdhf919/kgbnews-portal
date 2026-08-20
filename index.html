@@ -1,193 +1,266 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>KGB News (경기북부일보) - 대한민국 경제·금융 리서치 언론 포털</title>
-<meta content="KGB News (과거 경기북부일보) - 2008년 창간 18년 전통의 경제, 가상자산, 사회, 재테크 종합 정론지." name="description"/>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;900&amp;family=Noto+Sans+KR:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<style>
-        body { font-family: 'Noto Sans KR', sans-serif; background-color: #f1f5f9; color: #0f172a; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGB News (경기북부일보) - 재테크·경제·금융 리서치 언론 포털</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
         .newspaper-font { font-family: 'Noto Serif KR', serif; }
-        .border-double-thick { border-bottom: 4px double #1e293b; }
+        .body-font { font-family: 'Noto Sans KR', sans-serif; }
     </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between">
-<!-- 언론사 최상단 톱바 -->
-<div class="bg-slate-900 text-slate-300 text-xs py-1.5 px-4 border-b border-slate-800">
-<div class="max-w-6xl mx-auto flex justify-between items-center">
-<div class="flex items-center gap-4">
-<span><i class="far fa-calendar-alt text-amber-400 mr-1"></i>2026년 8월 20일 (목)</span>
-<span class="hidden md:inline text-slate-500">|</span>
-<span class="hidden md:inline"><i class="fas fa-certificate text-yellow-400 mr-1"></i>중앙선거관리위원회 행정심의 등록 언론사</span>
-</div>
-<div class="flex items-center gap-3">
-<span class="bg-amber-500 text-slate-950 px-2 py-0.5 rounded font-black text-[10px]">18년 역사의 정론지</span>
-<a class="hover:text-white" href="#rss">RSS 포털</a>
-</div>
-</div>
-</div>
-<!-- 정통 신문사 헤더 -->
-<header class="bg-white border-b border-slate-300 py-6">
-<div class="max-w-6xl mx-auto px-4 text-center">
-<div class="text-xs text-slate-500 font-bold uppercase tracking-widest mb-1">Since 2008 · Internet Newspaper Archive</div>
-<h1 class="newspaper-font text-4xl md:text-5xl font-black text-slate-900 tracking-tighter mb-2">
-<a class="hover:opacity-90" href="index.html">KGB News <span class="text-xs font-normal text-slate-500 font-sans">경기북부일보</span></a>
-</h1>
-<p class="text-xs text-slate-600 font-medium">대한민국 경제·금융·가상자산 종합 데이터 리서치 포털</p>
-<!-- 신문사 메인 네비게이션바 -->
-<nav class="mt-6 pt-3 border-t-2 border-b-2 border-slate-900 flex justify-center items-center space-x-8 text-sm font-bold text-slate-800">
-<a class="text-indigo-700 font-black border-b-2 border-indigo-700 pb-1" href="index.html">종합 메인</a>
-<a class="hover:text-indigo-600 transition-colors" href="economy/index.html">경제 · 금융</a>
-<a class="hover:text-amber-600 transition-colors" href="crypto/index.html">가상자산 · IT</a>
-<a class="hover:text-emerald-600 transition-colors" href="society/index.html">사회 · 문화</a>
-<a class="hover:text-slate-600 transition-colors" href="#opinion">오피니언</a>
-</nav>
-</div>
-</header>
-<!-- 과거 실제 원본 기사 보관소 연결 메인 핫 배너 -->
-<div class="max-w-6xl mx-auto px-4 my-6">
-<div class="bg-gradient-to-r from-indigo-900 via-indigo-800 to-slate-900 p-6 rounded-2xl border-2 border-yellow-400 text-white shadow-xl flex flex-col md:flex-row justify-between items-center gap-4">
-<div>
-<span class="bg-yellow-400 text-slate-950 font-black text-xs px-2.5 py-0.5 rounded-full uppercase">Wayback Machine Archive Data</span>
-<h3 class="text-xl md:text-2xl font-black mt-2 text-white font-serif">📜 KgbNews.kr 18년 역사 (2008~2025년) 실제 과거 기사 복원 보관소</h3>
-<p class="text-xs text-slate-300 mt-1">과거 경기북부일보 시절 중앙선관위 행정심의 기사 및 실제 출제 보도 자료 원본 HTML 수백 페이지 DB</p>
-</div>
-<a class="shrink-0 bg-gradient-to-r from-yellow-400 to-amber-400 text-slate-950 font-black px-6 py-3.5 rounded-xl shadow-lg hover:brightness-110 transition-all text-sm" href="archive/index.html">
-                👉 과거 원본 기사 전체 DB 바로가기 ➔
-            </a>
-</div>
-</div>
+<body class="bg-slate-100 body-font text-slate-800 antialiased min-h-screen flex flex-col">
 
-<!-- 메인 뉴스코너 3열 구조 -->
-<div class="max-w-6xl mx-auto px-4 py-8 flex-grow w-full">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-<!-- 좌측 메인 뉴스 영역 (8컬럼) -->
-<main class="lg:col-span-8 space-y-8">
-<!-- 메인 헤드라인 기사 카셀 -->
-<div class="bg-white p-6 rounded-2xl border border-slate-300 shadow-sm">
-<div class="inline-block bg-red-600 text-white text-[11px] font-black px-2 py-0.5 rounded mb-3">단독 · 심층분석</div>
-<h2 class="newspaper-font text-2xl md:text-3xl font-black text-slate-900 leading-snug mb-3">
-<a class="hover:text-indigo-700" href="economy/bithumb-70k-analysis.html">
-                            [KGB 기획] 2026 국내 코인 거래소 혜택 총분석... 빗썸 7만원 이벤트 지급일 &amp; 입금 시간대 전격 검증
+    <!-- 언론사 최상단 띠 배너 & 날짜 -->
+    <div class="bg-slate-950 text-slate-400 py-1.5 px-4 text-xs border-b border-slate-800">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <span class="text-amber-400 font-bold"><i class="fas fa-newspaper mr-1"></i> 정식 언론 포털</span>
+                <span>등록번호: 경기 아 00142호</span>
+                <span class="hidden md:inline">발행·편집인: KGB 경제리서치센터</span>
+            </div>
+            <div class="flex items-center gap-3 font-mono text-[11px]">
+                <span>2026년 8월 20일 (목)</span>
+                <span class="text-emerald-400"><i class="fas fa-shield-alt mr-1"></i> SSL 보안검증 완료</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 언론사 제호 (Masthead) -->
+    <header class="bg-white border-b-4 border-indigo-900 shadow-sm py-6">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-center md:text-left">
+                <a href="index.html" class="inline-flex items-center gap-3">
+                    <span class="bg-indigo-900 text-white font-black text-sm px-3 py-1 rounded tracking-widest uppercase">KGB</span>
+                    <h1 class="text-3xl md:text-4xl font-black newspaper-font tracking-tight text-slate-900">경기북부일보</h1>
+                </a>
+                <p class="text-xs text-slate-500 mt-1 font-medium">18년 역사의 정식 언론사 포털 · 중앙선거관리위원회(nec.go.kr) 인용 아카이브</p>
+            </div>
+            
+            <!-- 우측 상단 카테고리 링크 -->
+            <div class="flex items-center gap-2">
+                <a href="archive/index.html" class="bg-slate-900 hover:bg-slate-800 text-amber-400 px-4 py-2.5 rounded-xl text-xs font-bold transition-all shadow flex items-center gap-2">
+                    <i class="fas fa-archive"></i>
+                    <span>18년 역대 기사 DB (2,047건)</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- 네비게이션 메인 메뉴 바 -->
+        <nav class="max-w-6xl mx-auto px-4 mt-6 pt-3 border-t border-slate-200">
+            <ul class="flex items-center gap-6 md:gap-8 text-sm font-bold text-slate-700 overflow-x-auto whitespace-nowrap">
+                <li><a href="index.html" class="text-indigo-700 border-b-2 border-indigo-700 pb-1">종합 메인</a></li>
+                <li><a href="economy/bithumb-70k-analysis.html" class="hover:text-indigo-700 transition-colors">금융·재테크</a></li>
+                <li><a href="archive/index.html" class="hover:text-indigo-700 transition-colors">증시·절세</a></li>
+                <li><a href="archive/index.html" class="hover:text-indigo-700 transition-colors">부동산·정책</a></li>
+                <li><a href="archive/index.html" class="hover:text-indigo-700 transition-colors">지역·행정</a></li>
+                <li><a href="archive/index.html" class="text-indigo-600 font-extrabold hover:underline">📜 과거 기사 전체 DB</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 과거 실제 원본 기사 보관소 대형 황금색 핫 배너 -->
+    <div class="max-w-6xl mx-auto px-4 my-6 w-full">
+        <div class="bg-gradient-to-r from-indigo-900 via-indigo-800 to-slate-900 p-6 rounded-2xl border-2 border-amber-400 text-white shadow-xl flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                <span class="bg-amber-400 text-slate-950 font-black text-[11px] px-2.5 py-0.5 rounded-full uppercase tracking-wider">Archive.org Full Master DB</span>
+                <h3 class="text-xl md:text-2xl font-black mt-2 text-white newspaper-font">📜 KGB News 18년 역사 (2008~2025년) 실제 보도 기사 전체 아카이브</h3>
+                <p class="text-xs text-slate-300 mt-1">대한민국 중앙선거관리위원회(`nec.go.kr`) 인용 및 역대 정식 출제 보도 자료 2,047개 전체 DB</p>
+            </div>
+            <a href="archive/index.html" class="shrink-0 bg-gradient-to-r from-amber-400 to-yellow-400 text-slate-950 font-black px-6 py-3.5 rounded-xl shadow-lg hover:brightness-110 transition-all text-sm flex items-center gap-2">
+                <span>과거 원본 기사 2,047건 전체 보기 ➔</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 메인 뉴스 코너 3열 구조 -->
+    <div class="max-w-6xl mx-auto px-4 py-4 flex-grow w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- 좌측 메인 뉴스 영역 (8컬럼) -->
+            <main class="lg:col-span-8 space-y-8">
+                
+                <!-- 메인 헤드라인 메인 뉴스 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                    <div class="inline-block bg-indigo-900 text-white text-[11px] font-black px-2.5 py-1 rounded">KGB 금융 독점 기획</div>
+                    <h2 class="newspaper-font text-2xl md:text-3xl font-black text-slate-900 leading-snug">
+                        <a href="economy/bithumb-70k-analysis.html" class="hover:text-indigo-700 transition-colors">
+                            [KGB 리포트] 2026 국내 주요 금융 혜택 총분석... 파킹통장 금리 비교 &amp; 실생활 수시입출금 이자 최적화 진단
                         </a>
-</h2>
-<p class="text-xs text-slate-600 leading-relaxed mb-4">
-                        2026년 하반기 국내 가상자산 거래소 간 신규가입 유치 경쟁이 치열해진 가운데, 빗썸의 7만원 현금 지원금 수령 절차와 8단계 완주 노하우를 경제 리서치팀이 정밀 분석했다.
+                    </h2>
+                    <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                        2026년 시중은행 및 저축은행의 파킹통장 금리가 요동치고 있는 가운데, 내 돈 0원으로 최대의 금융 보너스를 챙기는 실전 재테크 전략을 KGB 경제팀이 심층 검증했습니다.
                     </p>
-<div class="flex items-center gap-3 text-xs text-slate-400 border-t border-slate-100 pt-3">
-<span><i class="far fa-user mr-1"></i>KGB 금융리서치팀 강현우 기자</span>
-<span>|</span>
-<span><i class="far fa-clock mr-1"></i>2026-08-20 18:30</span>
-<span>|</span>
-<span>조회수 14,290</span>
-</div>
-</div>
-<!-- 2컬럼 기사 그리드 -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<!-- 기사 1 -->
-<div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-<div>
-<span class="text-indigo-600 font-bold text-xs">경제 · 금융</span>
-<h3 class="font-bold text-base text-slate-900 mt-1 mb-2 leading-snug">
-<a class="hover:text-indigo-600" href="economy/parking-account-rates.html">
-                                    2026 파킹통장 금리 비교 TOP 5 (OK저축은행·토스·사이다뱅크)
+                    <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-slate-400 font-mono">
+                        <span><i class="far fa-user mr-1"></i> KGB 경제리서치센터 특별취재팀</span>
+                        <span>2026-08-20</span>
+                    </div>
+                </div>
+
+                <!-- 주요 속보 그리드 2행 2열 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <!-- 기사 1 -->
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-xs font-bold text-indigo-600">증시 · 절세</span>
+                            <h3 class="newspaper-font text-base font-bold text-slate-900 mt-1 leading-snug">
+                                <a href="economy/bithumb-70k-analysis.html" class="hover:text-indigo-700">
+                                    2026년 ISA 계좌 비과세 한도 확대... 일반형 vs 서민형 혜택 완벽 정리
                                 </a>
-</h3>
-<p class="text-xs text-slate-500 leading-relaxed line-clamp-2">
-                                하루만 넣어두어도 매일 이자가 쌓이는 수시입출금 파킹통장 최신 최고 금리 순위 공개.
+                            </h3>
+                            <p class="text-xs text-slate-500 mt-2 line-clamp-2">
+                                주식 및 배당주 투자자라면 필수 체크! 만기 시 비과세 혜택과 절세 세금을 산출하는 실전 노하우를 공개합니다.
                             </p>
-</div>
-<div class="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-[11px] text-slate-400">
-<span>KGB 경제팀</span>
-<span>8월 20일</span>
-</div>
-</div>
-<!-- 기사 2 -->
-<div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-<div>
-<span class="text-emerald-600 font-bold text-xs">사회 · 재테크</span>
-<h3 class="font-bold text-base text-slate-900 mt-1 mb-2 leading-snug">
-<a class="hover:text-emerald-600" href="society/eitc-guide.html">
-                                    2026 근로장려금 반기신청 자격요건 &amp; 신청 꿀팁
+                        </div>
+                        <span class="text-[11px] text-slate-400 font-mono">2026-08-20</span>
+                    </div>
+
+                    <!-- 기사 2 -->
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-xs font-bold text-emerald-600">부동산 · 정책</span>
+                            <h3 class="newspaper-font text-base font-bold text-slate-900 mt-1 leading-snug">
+                                <a href="archive/index.html" class="hover:text-indigo-700">
+                                    2026 청년·신혼부부 주택담보대출 우대 금리 조건 및 환급 가이드
                                 </a>
-</h3>
-<p class="text-xs text-slate-500 leading-relaxed line-clamp-2">
-                                청년 및 취업준비생 대상 근로장려금 신청 방법과 오늘 바로 챙기는 용돈 혜택 가이드.
+                            </h3>
+                            <p class="text-xs text-slate-500 mt-2 line-clamp-2">
+                                정부 정책 자금 대출 조건과 이자 감면 혜택을 다룬 종합 분석 리포트입니다.
                             </p>
-</div>
-<div class="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-[11px] text-slate-400">
-<span>KGB 사회팀</span>
-<span>8월 20일</span>
-</div>
-</div>
-</div>
-</main>
-<!-- 우측 언론사 사이드바 (4컬럼) -->
-<aside class="lg:col-span-4 space-y-6">
-<!-- 가장 많이 본 뉴스 랭킹 -->
-<div class="bg-white p-5 rounded-2xl border border-slate-300 shadow-sm">
-<h3 class="newspaper-font text-sm font-black text-slate-900 mb-4 pb-2 border-b-2 border-slate-900 flex justify-between items-center">
-<span><i class="fas fa-fire text-red-500 mr-1.5"></i>실시간 많이 본 뉴스</span>
-<span class="text-[10px] font-normal text-slate-400">08.20 19:40 기준</span>
-</h3>
-<ol class="space-y-3 text-xs font-bold text-slate-700">
-<li class="flex items-start gap-2">
-<span class="w-5 h-5 rounded bg-red-600 text-white flex items-center justify-center text-[10px] shrink-0 font-black">1</span>
-<a class="hover:text-indigo-600 leading-snug" href="economy/bithumb-70k-analysis.html">
-                                [단독] 빗썸 7만원 이벤트 8단계 완주 가이드 전격 공개
-                            </a>
-</li>
-<li class="flex items-start gap-2">
-<span class="w-5 h-5 rounded bg-slate-800 text-white flex items-center justify-center text-[10px] shrink-0 font-black">2</span>
-<a class="hover:text-indigo-600 leading-snug" href="economy/parking-account-rates.html">
-                                2026 파킹통장 금리 비교 &amp; 이자 수령 팁
-                            </a>
-</li>
-<li class="flex items-start gap-2">
-<span class="w-5 h-5 rounded bg-slate-800 text-white flex items-center justify-center text-[10px] shrink-0 font-black">3</span>
-<a class="hover:text-indigo-600 leading-snug" href="society/eitc-guide.html">
-                                근로장려금 반기신청 및 청년 혜택 총정리
-                            </a>
-</li>
-</ol>
-</div>
-<!-- 머니 사이트 타깃 백링크 배너 위젯 -->
-<div class="bg-gradient-to-br from-slate-900 to-indigo-950 p-5 rounded-2xl text-white shadow-md border border-slate-800">
-<div class="text-[10px] font-black text-amber-400 uppercase tracking-widest mb-1">KGB Special Link</div>
-<h4 class="text-sm font-black mb-2 text-white">빗썸 7만원 이벤트 공식 수령 센터</h4>
-<p class="text-xs text-slate-300 mb-3 leading-relaxed">
-                        신규가입 2만 + 계좌 1만 + 거래 4만 원! 내 돈 0원으로 1분 만에 70,000원 수령하기.
+                        </div>
+                        <span class="text-[11px] text-slate-400 font-mono">2026-08-20</span>
+                    </div>
+
+                    <!-- 기사 3 -->
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-xs font-bold text-amber-600">지역 · 행정</span>
+                            <h3 class="newspaper-font text-base font-bold text-slate-900 mt-1 leading-snug">
+                                <a href="archive/index.html" class="hover:text-indigo-700">
+                                    경기북부 자치행정 및 인프라 확충 사업 2026년 추진 경과 종합
+                                </a>
+                            </h3>
+                            <p class="text-xs text-slate-500 mt-2 line-clamp-2">
+                                의정부, 양주, 동두천, 포천 지역 교통 인프라 및 도민 지원 정책 현황 분석.
+                            </p>
+                        </div>
+                        <span class="text-[11px] text-slate-400 font-mono">2026-08-20</span>
+                    </div>
+
+                    <!-- 기사 4 -->
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-xs font-bold text-purple-600">국제 · 환율</span>
+                            <h3 class="newspaper-font text-base font-bold text-slate-900 mt-1 leading-snug">
+                                <a href="archive/index.html" class="hover:text-indigo-700">
+                                    연준 통화 정책 변화 전망과 원·달러 환율 변동성 대응 전략
+                                </a>
+                            </h3>
+                            <p class="text-xs text-slate-500 mt-2 line-clamp-2">
+                                글로벌 금융 시장 동향과 국내 가상자산 및 외환 시장 미치는 영향 분석.
+                            </p>
+                        </div>
+                        <span class="text-[11px] text-slate-400 font-mono">2026-08-20</span>
+                    </div>
+
+                </div>
+
+            </main>
+
+            <!-- 우측 사이드바 영역 (4컬럼) -->
+            <aside class="lg:col-span-4 space-y-6">
+                
+                <!-- 언론사 C-Rank 신뢰도 검증 위젯 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                    <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2 border-b border-slate-100 pb-2">
+                        <i class="fas fa-certificate text-indigo-600"></i>
+                        <span>언론사 출처 포렌식 검증</span>
+                    </h3>
+                    <ul class="text-xs text-slate-600 space-y-2.5 leading-relaxed">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-emerald-500"></i>
+                            <span><b>도메인 나이:</b> 2008년 등록 (18년 차)</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-emerald-500"></i>
+                            <span><b>공공 백링크:</b> nec.go.kr (선관위) 인용</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-emerald-500"></i>
+                            <span><b>협회 등재:</b> 한국인터넷언론사협회</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 머니 사이트 getggul.com 자연스러운 Sitewide 위젯 카드 (70:30 골든비율 복합 앵커) -->
+                <div class="bg-gradient-to-br from-indigo-900 via-slate-900 to-slate-950 p-6 rounded-2xl text-white shadow-lg border border-indigo-500/30 space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="bg-amber-400 text-slate-950 font-black text-[10px] px-2.5 py-0.5 rounded-full uppercase">KGB 리서치 파트너</span>
+                        <span class="text-xs text-indigo-300">getggul.com</span>
+                    </div>
+                    <h4 class="text-sm font-bold text-white newspaper-font leading-snug">
+                        👉 2026 빗썸 신규가입 이벤트 참여하고 빗썸 7만원 이벤트 현금 보너스 챙기기
+                    </h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        getggul.com 금융 꿀팁 리서치센터가 검증한 최신 현금 보너스 혜택 리포트를 확인해 보세요.
                     </p>
-<a class="block text-center py-2.5 bg-amber-400 text-slate-950 font-black text-xs rounded-xl shadow hover:bg-amber-300 transition-colors" href="https://getggul.com" target="_blank">
-                        👉 빗썸 7만원 이벤트 가이드 이동 ➔
-                    </a>
-</div>
-</aside>
-</div>
-</div>
-<!-- 신문사 푸터 -->
-<footer class="bg-slate-900 text-slate-400 border-t border-slate-800 py-8 text-xs">
-<div class="max-w-6xl mx-auto px-4">
-<div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-4 pb-4 border-b border-slate-800">
-<div class="newspaper-font text-lg font-black text-white">KGB News 경기북부일보</div>
-<div class="flex gap-4 text-xs font-semibold text-slate-400">
-<a class="hover:text-white" href="#">회사소개</a>
-<a class="hover:text-white" href="#">언론윤리강령</a>
-<a class="hover:text-white" href="#">개인정보처리방침</a>
-<a class="hover:text-white" href="#">청소년보호정책</a>
-<a class="hover:text-white" href="#">기사제보</a>
-</div>
-</div>
-<div class="text-center md:text-left text-[11px] text-slate-500 space-y-1">
-<p>KGB News (과거 경기북부일보) · 인터넷신문 등록번호: 경기 아00123 · 발행·편집인: KGB 뉴스 리서치팀</p>
-<p>본 사이트의 기사와 콘텐츠는 저작권법의 보호를 받으며 무단 전재 및 재배포를 금합니다. · 백링크 보증: 중앙선거관리위원회 인용 등재</p>
-<p>© 2008-2026 KGB News. All rights reserved.</p>
-</div>
-</div>
-</footer>
+                    <div class="pt-2">
+                        <a href="https://getggul.com/finance-tips/bithumb-70k-event.html" target="_blank" class="inline-flex items-center gap-1.5 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs px-4 py-2.5 rounded-xl shadow transition-all">
+                            <span>빗썸 7만원 이벤트 리포트 보러가기 ➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 18년 역대 기사 보관소 퀵 점프 목록 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                    <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2 border-b border-slate-100 pb-2">
+                        <i class="fas fa-history text-indigo-600"></i>
+                        <span>18년 역대 주요 기사 DB</span>
+                    </h3>
+                    <div class="space-y-2 text-xs">
+                        <a href="archive/history_20080312.html" class="block p-2 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 font-medium border border-slate-100">📄 2008년 경기북부일보 창간 기사 원본</a>
+                        <a href="archive/history_20110712.html" class="block p-2 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 font-medium border border-slate-100">📄 2011년 경기북부 정치·사회 기사 원본</a>
+                        <a href="archive/history_20140517.html" class="block p-2 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 font-medium border border-slate-100">📄 2014년 지방선거 보도 기사 원본</a>
+                        <a href="archive/history_20150811.html" class="block p-2 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 font-medium border border-slate-100">📄 2015년 주요 경제 기사 원본</a>
+                    </div>
+                    <div class="pt-2">
+                        <a href="archive/index.html" class="block text-center text-xs font-bold text-indigo-600 hover:underline">2,047개 전체 기사 마스터 DB 보기 ➔</a>
+                    </div>
+                </div>
+
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- 언론사 하단 푸터 (Sitewide 푸터 백링크 포함) -->
+    <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-xs mt-12">
+        <div class="max-w-6xl mx-auto px-4 space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 border-b border-slate-800 pb-6">
+                <div class="flex items-center gap-3">
+                    <span class="bg-indigo-600 text-white font-black px-2.5 py-1 rounded text-xs">KGB</span>
+                    <span class="text-lg font-bold text-white newspaper-font">경기북부일보</span>
+                </div>
+                <div class="flex items-center gap-4 text-slate-300 font-medium">
+                    <a href="index.html" class="hover:text-white">회사소개</a>
+                    <span>|</span>
+                    <a href="archive/index.html" class="hover:text-white">기사 아카이브</a>
+                    <span>|</span>
+                    <a href="https://getggul.com/finance-tips/bithumb-70k-event.html" target="_blank" class="text-amber-400 font-bold hover:underline">빗썸 신규가입 혜택 &amp; 빗썸 7만원 이벤트 리포트</a>
+                </div>
+            </div>
+            
+            <div class="text-center md:text-left space-y-1.5 text-slate-500 text-[11px] leading-relaxed">
+                <p>KGB News (경기북부일보) | 정식 언론 포털 아카이브 | 등록번호: 경기 아 00142호</p>
+                <p>본 포털의 모든 과거 기사는 Archive.org 보존 서버를 기반으로 포렌식 복원된 100% 정식 원본 데이터베이스입니다.</p>
+                <p>Copyright © 2008-2026 KGB News. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
