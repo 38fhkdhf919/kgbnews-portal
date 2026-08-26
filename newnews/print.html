@@ -24,6 +24,9 @@
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="alternate icon" type="image/x-icon" href="../favicon.ico">
     <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <!-- 네이버 & 구글 웹마스터도구 소유권 인증 -->
+    <meta name="naver-site-verification" content="828fdaf63f680cf5d5117709795b5c15ea92bab2" />
+    <meta name="google-site-verification" content="Jn0rZ1U46YiuN7cebLMzNLeuSWz9oG0kqmxcYR7JtGw" />
 </head>
 <body class="min-h-screen flex flex-col justify-between">
 
