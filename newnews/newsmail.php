@@ -20,6 +20,10 @@
     </style>
     <!-- 데이터 사전 로드 (CORS 0% 완벽 방어) -->
     <script src="../articles_data.js"></script>
+    <!-- 정통 언론사 파비콘 설정 -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="alternate icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 </head>
 <body class="min-h-screen flex flex-col justify-between">
 
