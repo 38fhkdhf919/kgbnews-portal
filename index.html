@@ -1,266 +1,452 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KGB News (경기북부일보) - 재테크·경제·금융 리서치 언론 포털</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .newspaper-font { font-family: 'Noto Serif KR', serif; }
-        .body-font { font-family: 'Noto Sans KR', sans-serif; }
-    </style>
-</head>
-<body class="bg-slate-100 body-font text-slate-800 antialiased min-h-screen flex flex-col">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>KGB NEWS 케이지비 뉴스 - 대한민국 18년 전통 종합 시사·경제 언론 포털</title>
+    <meta name="description" content="KGB NEWS (경기북부일보) 공식 언론 포털입니다. 정치, 경제, 사회, 산업, 금융 분야의 정론직필 속보와 2008년부터 축적된 18년 역사 2,047건의 심층 탐사 기획 기사를 제공합니다.">
+    <meta name="keywords" content="KGB뉴스, 케이지비뉴스, 경기북부일보, 종합일간지, 경제뉴스, 시사보도, 금융이슈, 정책분석, 지역종합">
 
-    <!-- 언론사 최상단 띠 배너 & 날짜 -->
-    <div class="bg-slate-950 text-slate-400 py-1.5 px-4 text-xs border-b border-slate-800">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <span class="text-amber-400 font-bold"><i class="fas fa-newspaper mr-1"></i> 정식 언론 포털</span>
-                <span>등록번호: 경기 아 00142호</span>
-                <span class="hidden md:inline">발행·편집인: KGB 경제리서치센터</span>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+            word-break: keep-all;
+        }
+        .serif-title {
+            font-family: 'Noto Serif KR', serif;
+        }
+        .news-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s ease-in-out;
+        }
+        .news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.08);
+            border-color: #cbd5e1;
+        }
+        .ticker-wrap {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .ticker-move {
+            display: inline-block;
+            animation: ticker 25s linear infinite;
+        }
+        @keyframes ticker {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-50%, 0, 0); }
+        }
+        @media (max-width: 768px) {
+            #mobile-nav.active {
+                display: block !important;
+            }
+        }
+    </style>
+    <!-- 데이터 번들 로드 -->
+    <script src="./articles_data.js"></script>
+</head>
+
+<body class="min-h-screen flex flex-col justify-between">
+
+    <!-- 1. 최상단 롤링 속보 바 & Utility Header -->
+    <div class="bg-slate-950 text-slate-300 text-xs border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-3 w-full sm:w-auto overflow-hidden">
+                <span class="bg-red-600 text-white font-black px-2 py-0.5 rounded text-[10px] shrink-0 animate-pulse">
+                    ⚡ 실시간 속보
+                </span>
+                <div class="ticker-wrap w-full text-slate-300 text-[11px] font-medium">
+                    <div class="ticker-move">
+                        <span class="mr-8">• [금융] 한국은행 기준금리 3.25% 동결 결정... 시장 물가 안정 및 경기 회복세 주시</span>
+                        <span class="mr-8">• [증시] KOSPI 외국인·기관 순매수세에 2,750선 안착... 반도체 대형주 강세</span>
+                        <span class="mr-8">• [행정] 경기도 광역교통망 확충 및 GTX 주요 노선 연내 착공 로드맵 확정</span>
+                        <span class="mr-8">• [경제] 2026년 하반기 세제개편안 국회 본회의 통과... 투자 촉진 세제 지원 강화</span>
+                    </div>
+                </div>
             </div>
-            <div class="flex items-center gap-3 font-mono text-[11px]">
-                <span>2026년 8월 20일 (목)</span>
-                <span class="text-emerald-400"><i class="fas fa-shield-alt mr-1"></i> SSL 보안검증 완료</span>
+            <div class="hidden sm:flex items-center gap-4 text-[11px] text-slate-400 shrink-0">
+                <span><i class="far fa-calendar-alt mr-1"></i>2026년 8월 26일</span>
+                <span>•</span>
+                <a href="./archive/index.html" class="hover:text-amber-400 transition-colors font-bold">
+                    <i class="fas fa-archive mr-1"></i>기사 아카이브 보관소 (2,047건)
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- 언론사 제호 (Masthead) -->
-    <header class="bg-white border-b-4 border-indigo-900 shadow-sm py-6">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-            <div class="text-center md:text-left">
-                <a href="index.html" class="inline-flex items-center gap-3">
-                    <span class="bg-indigo-900 text-white font-black text-sm px-3 py-1 rounded tracking-widest uppercase">KGB</span>
-                    <h1 class="text-3xl md:text-4xl font-black newspaper-font tracking-tight text-slate-900">경기북부일보</h1>
-                </a>
-                <p class="text-xs text-slate-500 mt-1 font-medium">18년 역사의 정식 언론사 포털 · 중앙선거관리위원회(nec.go.kr) 인용 아카이브</p>
-            </div>
+    <!-- 2. 메인 언론사 로고 헤더 -->
+    <header class="bg-white border-b border-slate-200 py-6">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
             
-            <!-- 우측 상단 카테고리 링크 -->
-            <div class="flex items-center gap-2">
-                <a href="archive/index.html" class="bg-slate-900 hover:bg-slate-800 text-amber-400 px-4 py-2.5 rounded-xl text-xs font-bold transition-all shadow flex items-center gap-2">
-                    <i class="fas fa-archive"></i>
-                    <span>18년 역대 기사 DB (2,047건)</span>
+            <!-- 로고 브랜딩 -->
+            <div class="flex items-center gap-4">
+                <a href="./index.html" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center font-black text-2xl shadow-lg border border-slate-700 group-hover:scale-105 transition-transform">
+                        KGB
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="serif-title text-2xl md:text-3xl font-black tracking-tighter text-slate-900 group-hover:text-indigo-900 transition-colors">
+                                케이지비 뉴스
+                            </span>
+                            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold border border-slate-200">
+                                18년 전통
+                            </span>
+                        </div>
+                        <p class="text-[11px] text-slate-500 font-medium tracking-tight mt-0.5">
+                            대한민국 정론직필 시사·경제 종합 언론 포털 | 창간 2008년 5월 12일
+                        </p>
+                    </div>
                 </a>
             </div>
-        </div>
 
-        <!-- 네비게이션 메인 메뉴 바 -->
-        <nav class="max-w-6xl mx-auto px-4 mt-6 pt-3 border-t border-slate-200">
-            <ul class="flex items-center gap-6 md:gap-8 text-sm font-bold text-slate-700 overflow-x-auto whitespace-nowrap">
-                <li><a href="index.html" class="text-indigo-700 border-b-2 border-indigo-700 pb-1">종합 메인</a></li>
-                <li><a href="economy/bithumb-70k-analysis.html" class="hover:text-indigo-700 transition-colors">금융·재테크</a></li>
-                <li><a href="archive/index.html" class="hover:text-indigo-700 transition-colors">증시·절세</a></li>
-                <li><a href="archive/index.html" class="hover:text-indigo-700 transition-colors">부동산·정책</a></li>
-                <li><a href="archive/index.html" class="hover:text-indigo-700 transition-colors">지역·행정</a></li>
-                <li><a href="archive/index.html" class="text-indigo-600 font-extrabold hover:underline">📜 과거 기사 전체 DB</a></li>
-            </ul>
-        </nav>
+            <!-- 증시 & 환율 지수 실시간 바 -->
+            <div class="hidden lg:flex items-center gap-4 bg-slate-50 p-3 rounded-2xl border border-slate-200 text-xs">
+                <div class="flex items-center gap-2 px-3 border-r border-slate-200">
+                    <span class="text-slate-500 font-bold">코스피</span>
+                    <span class="font-black text-slate-900">2,754.20</span>
+                    <span class="text-red-500 font-bold text-[11px]"><i class="fas fa-caret-up"></i> +14.50</span>
+                </div>
+                <div class="flex items-center gap-2 px-3 border-r border-slate-200">
+                    <span class="text-slate-500 font-bold">코스닥</span>
+                    <span class="font-black text-slate-900">865.10</span>
+                    <span class="text-red-500 font-bold text-[11px]"><i class="fas fa-caret-up"></i> +3.20</span>
+                </div>
+                <div class="flex items-center gap-2 px-3">
+                    <span class="text-slate-500 font-bold">USD/KRW</span>
+                    <span class="font-black text-slate-900">1,335.50</span>
+                    <span class="text-blue-500 font-bold text-[11px]"><i class="fas fa-caret-down"></i> -2.10</span>
+                </div>
+            </div>
+
+        </div>
     </header>
 
-    <!-- 과거 실제 원본 기사 보관소 대형 황금색 핫 배너 -->
-    <div class="max-w-6xl mx-auto px-4 my-6 w-full">
-        <div class="bg-gradient-to-r from-indigo-900 via-indigo-800 to-slate-900 p-6 rounded-2xl border-2 border-amber-400 text-white shadow-xl flex flex-col md:flex-row justify-between items-center gap-4">
-            <div>
-                <span class="bg-amber-400 text-slate-950 font-black text-[11px] px-2.5 py-0.5 rounded-full uppercase tracking-wider">Archive.org Full Master DB</span>
-                <h3 class="text-xl md:text-2xl font-black mt-2 text-white newspaper-font">📜 KGB News 18년 역사 (2008~2025년) 실제 보도 기사 전체 아카이브</h3>
-                <p class="text-xs text-slate-300 mt-1">대한민국 중앙선거관리위원회(`nec.go.kr`) 인용 및 역대 정식 출제 보도 자료 2,047개 전체 DB</p>
-            </div>
-            <a href="archive/index.html" class="shrink-0 bg-gradient-to-r from-amber-400 to-yellow-400 text-slate-950 font-black px-6 py-3.5 rounded-xl shadow-lg hover:brightness-110 transition-all text-sm flex items-center gap-2">
-                <span>과거 원본 기사 2,047건 전체 보기 ➔</span>
-            </a>
-        </div>
-    </div>
-
-    <!-- 메인 뉴스 코너 3열 구조 -->
-    <div class="max-w-6xl mx-auto px-4 py-4 flex-grow w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+    <!-- 3. 메인 네비게이션 가로 바 -->
+    <nav class="bg-slate-900 sticky top-0 z-50 text-white border-b-2 border-indigo-600 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
             
-            <!-- 좌측 메인 뉴스 영역 (8컬럼) -->
-            <main class="lg:col-span-8 space-y-8">
+            <ul class="hidden md:flex items-center space-x-1 text-sm font-bold">
+                <li><a href="./index.html" class="block px-4 py-3.5 bg-indigo-600 text-white font-black">홈</a></li>
+                <li><a href="./sub.html?section=sc1" class="block px-4 py-3.5 hover:bg-slate-800 text-slate-200 hover:text-amber-400 transition-colors">정치·행정</a></li>
+                <li><a href="./sub.html?section=sc2" class="block px-4 py-3.5 hover:bg-slate-800 text-slate-200 hover:text-amber-400 transition-colors">경제·산업</a></li>
+                <li><a href="./sub.html?section=sc3" class="block px-4 py-3.5 hover:bg-slate-800 text-slate-200 hover:text-amber-400 transition-colors">사회·이슈</a></li>
+                <li><a href="./sub.html?section=sc4" class="block px-4 py-3.5 hover:bg-slate-800 text-slate-200 hover:text-amber-400 transition-colors">지역종합</a></li>
+                <li><a href="./archive/index.html" class="block px-4 py-3.5 hover:bg-slate-800 text-yellow-300 font-black transition-colors"><i class="fas fa-database mr-1"></i>역대 기사 보관소 (2,047건)</a></li>
+            </ul>
+
+            <div class="flex items-center gap-3">
+                <a href="./archive/index.html" class="bg-indigo-600 hover:bg-indigo-500 text-white px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 shadow">
+                    <i class="fas fa-archive text-[10px]"></i>
+                    <span>기사 아카이브 DB</span>
+                </a>
+            </div>
+
+            <div class="md:hidden flex justify-between items-center w-full py-3">
+                <span class="font-black text-white text-sm">KGB NEWS 메뉴</span>
+                <button id="menu-toggle" class="text-white text-xl p-1" aria-label="메뉴 열기">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- 모바일 네비게이션 드롭다운 -->
+        <div id="mobile-nav" class="hidden md:hidden bg-slate-950 border-t border-slate-800 px-4 py-3 space-y-2 text-sm">
+            <a href="./index.html" class="block py-2 text-indigo-400 font-bold">홈</a>
+            <a href="./sub.html?section=sc1" class="block py-2 text-slate-300">정치·행정</a>
+            <a href="./sub.html?section=sc2" class="block py-2 text-slate-300">경제·산업</a>
+            <a href="./sub.html?section=sc3" class="block py-2 text-slate-300">사회·이슈</a>
+            <a href="./sub.html?section=sc4" class="block py-2 text-slate-300">지역종합</a>
+            <a href="./archive/index.html" class="block py-2 text-yellow-300 font-bold">역대 기사 보관소 (2,047건)</a>
+        </div>
+    </nav>
+
+    <!-- 4. 메인 컨텐츠 영역 -->
+    <main class="max-w-7xl mx-auto px-4 py-8 flex-grow w-full space-y-10">
+        
+        <!-- 탑 섹션: 메인 헤드라인 톱기사 + 서브 기사 Grid -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- 좌측 8열: 정통 언론사 메인 헤드라인 기사 -->
+            <div class="lg:col-span-8 space-y-6">
                 
-                <!-- 메인 헤드라인 메인 뉴스 -->
-                <div class="bg-white p-6 md:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4">
-                    <div class="inline-block bg-indigo-900 text-white text-[11px] font-black px-2.5 py-1 rounded">KGB 금융 독점 기획</div>
-                    <h2 class="newspaper-font text-2xl md:text-3xl font-black text-slate-900 leading-snug">
-                        <a href="economy/bithumb-70k-analysis.html" class="hover:text-indigo-700 transition-colors">
-                            [KGB 리포트] 2026 국내 주요 금융 혜택 총분석... 파킹통장 금리 비교 &amp; 실생활 수시입출금 이자 최적화 진단
+                <div class="bg-white p-6 md:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                    <div class="flex items-center gap-2 text-xs font-bold">
+                        <span class="bg-red-600 text-white px-2.5 py-0.5 rounded uppercase">심층 기획</span>
+                        <span class="text-slate-400">2026.08.26 | 경제정책팀 종합</span>
+                    </div>
+
+                    <h1 class="serif-title text-2xl md:text-3xl lg:text-4xl font-black text-slate-950 leading-tight hover:text-indigo-900 transition-colors">
+                        <a href="./report_view.html?newsuid=17105">
+                            [기획 탐사] 2026년 하반기 통화정책과 가계 금융 환경 점검... 기준금리 동결 속 실물 경제 파급 효과
                         </a>
-                    </h2>
-                    <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        2026년 시중은행 및 저축은행의 파킹통장 금리가 요동치고 있는 가운데, 내 돈 0원으로 최대의 금융 보너스를 챙기는 실전 재테크 전략을 KGB 경제팀이 심층 검증했습니다.
+                    </h1>
+
+                    <div class="p-4 bg-slate-50 border-l-4 border-slate-900 text-slate-700 text-sm md:text-base leading-relaxed font-medium">
+                        "한국은행 금융통화위원회가 기준금리를 연 3.25%로 동결하며 경기 회복 흐름과 금융 안정 간의 균형 잡기에 나섰다. 시중은행 예금 금리 하락과 가계부채 관리 정책이 맞물리며 스마트 금융 소비자와 절세 금융상품으로의 자금 이동이 가속화되고 있다."
+                    </div>
+
+                    <p class="text-slate-600 text-sm leading-relaxed font-sans">
+                        금융당국의 가계부채 억제 기조와 함께 생산적 금융으로의 자금 유입을 유도하기 위한 다양한 정책성 금융상품이 잇달아 출시되고 있다. 특히 청년도약계좌 기여금 확대 개편안 및 개인종합자산관리계좌(ISA) 비과세 한도 상향 등 자산 형성을 지원하기 위한 세제 혜택이 본격 시행을 앞두고 있어 투자자들의 관심이 집중된다.
                     </p>
-                    <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-slate-400 font-mono">
-                        <span><i class="far fa-user mr-1"></i> KGB 경제리서치센터 특별취재팀</span>
-                        <span>2026-08-20</span>
+
+                    <div class="pt-3 flex justify-between items-center text-xs text-slate-400 border-t border-slate-100 flex-wrap gap-2">
+                        <span>취재기자: 성호 박 수석기자 (desk@kgbnews.kr)</span>
+                        <a href="./report_view.html?newsuid=17105" class="text-indigo-600 font-bold hover:underline">
+                            기사 전문 읽기 ➔
+                        </a>
                     </div>
                 </div>
 
-                <!-- 주요 속보 그리드 2행 2열 -->
+                <!-- 2열 서브 기사 Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    
-                    <!-- 기사 1 -->
-                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-3">
-                        <div>
-                            <span class="text-xs font-bold text-indigo-600">증시 · 절세</span>
-                            <h3 class="newspaper-font text-base font-bold text-slate-900 mt-1 leading-snug">
-                                <a href="economy/bithumb-70k-analysis.html" class="hover:text-indigo-700">
-                                    2026년 ISA 계좌 비과세 한도 확대... 일반형 vs 서민형 혜택 완벽 정리
-                                </a>
-                            </h3>
-                            <p class="text-xs text-slate-500 mt-2 line-clamp-2">
-                                주식 및 배당주 투자자라면 필수 체크! 만기 시 비과세 혜택과 절세 세금을 산출하는 실전 노하우를 공개합니다.
-                            </p>
+                    <div class="news-card p-5 rounded-2xl space-y-2">
+                        <span class="text-[11px] font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded">금융·절세</span>
+                        <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-indigo-600">
+                            <a href="./report_view.html?newsuid=14541">
+                                2026년 ISA 계좌 비과세 한도 대폭 확대... 일반형 vs 서민형 손익통산 분석
+                            </a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                            정부 밸류업 프로그램 및 배당소득 분리과세 개편안과 연계하여 증권사 ISA 계좌 개설 수요가 급증하고 있는 현장을 취재했다.
+                        </p>
+                        <div class="text-[11px] text-slate-400 pt-2 flex justify-between">
+                            <span>2026.08.25</span>
+                            <span class="font-bold text-indigo-600">경제부</span>
                         </div>
-                        <span class="text-[11px] text-slate-400 font-mono">2026-08-20</span>
                     </div>
 
-                    <!-- 기사 2 -->
-                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-3">
-                        <div>
-                            <span class="text-xs font-bold text-emerald-600">부동산 · 정책</span>
-                            <h3 class="newspaper-font text-base font-bold text-slate-900 mt-1 leading-snug">
-                                <a href="archive/index.html" class="hover:text-indigo-700">
-                                    2026 청년·신혼부부 주택담보대출 우대 금리 조건 및 환급 가이드
-                                </a>
-                            </h3>
-                            <p class="text-xs text-slate-500 mt-2 line-clamp-2">
-                                정부 정책 자금 대출 조건과 이자 감면 혜택을 다룬 종합 분석 리포트입니다.
-                            </p>
+                    <div class="news-card p-5 rounded-2xl space-y-2">
+                        <span class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">정책·행정</span>
+                        <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-indigo-600">
+                            <a href="./report_view.html?newsuid=17111">
+                                경기북부 광역교통망 확충 및 GTX 주요 노선 연내 조기 착공 속도
+                            </a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                            지역 균형 발전과 도민 통근 편의 증진을 위해 핵심 철도망 및 광역 환승 체계 구축 사업이 본궤도에 올랐다.
+                        </p>
+                        <div class="text-[11px] text-slate-400 pt-2 flex justify-between">
+                            <span>2026.08.24</span>
+                            <span class="font-bold text-emerald-600">사회부</span>
                         </div>
-                        <span class="text-[11px] text-slate-400 font-mono">2026-08-20</span>
                     </div>
-
-                    <!-- 기사 3 -->
-                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-3">
-                        <div>
-                            <span class="text-xs font-bold text-amber-600">지역 · 행정</span>
-                            <h3 class="newspaper-font text-base font-bold text-slate-900 mt-1 leading-snug">
-                                <a href="archive/index.html" class="hover:text-indigo-700">
-                                    경기북부 자치행정 및 인프라 확충 사업 2026년 추진 경과 종합
-                                </a>
-                            </h3>
-                            <p class="text-xs text-slate-500 mt-2 line-clamp-2">
-                                의정부, 양주, 동두천, 포천 지역 교통 인프라 및 도민 지원 정책 현황 분석.
-                            </p>
-                        </div>
-                        <span class="text-[11px] text-slate-400 font-mono">2026-08-20</span>
-                    </div>
-
-                    <!-- 기사 4 -->
-                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-3">
-                        <div>
-                            <span class="text-xs font-bold text-purple-600">국제 · 환율</span>
-                            <h3 class="newspaper-font text-base font-bold text-slate-900 mt-1 leading-snug">
-                                <a href="archive/index.html" class="hover:text-indigo-700">
-                                    연준 통화 정책 변화 전망과 원·달러 환율 변동성 대응 전략
-                                </a>
-                            </h3>
-                            <p class="text-xs text-slate-500 mt-2 line-clamp-2">
-                                글로벌 금융 시장 동향과 국내 가상자산 및 외환 시장 미치는 영향 분석.
-                            </p>
-                        </div>
-                        <span class="text-[11px] text-slate-400 font-mono">2026-08-20</span>
-                    </div>
-
                 </div>
 
-            </main>
+            </div>
 
-            <!-- 우측 사이드바 영역 (4컬럼) -->
-            <aside class="lg:col-span-4 space-y-6">
+            <!-- 우측 4열: 실시간 많이 본 기사 & PBN 제휴 위젯 -->
+            <div class="lg:col-span-4 space-y-6">
                 
-                <!-- 언론사 C-Rank 신뢰도 검증 위젯 -->
-                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
-                    <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2 border-b border-slate-100 pb-2">
-                        <i class="fas fa-certificate text-indigo-600"></i>
-                        <span>언론사 출처 포렌식 검증</span>
-                    </h3>
-                    <ul class="text-xs text-slate-600 space-y-2.5 leading-relaxed">
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check-circle text-emerald-500"></i>
-                            <span><b>도메인 나이:</b> 2008년 등록 (18년 차)</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check-circle text-emerald-500"></i>
-                            <span><b>공공 백링크:</b> nec.go.kr (선관위) 인용</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fas fa-check-circle text-emerald-500"></i>
-                            <span><b>협회 등재:</b> 한국인터넷언론사협회</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- 머니 사이트 getggul.com 자연스러운 Sitewide 위젯 카드 (70:30 골든비율 복합 앵커) -->
-                <div class="bg-gradient-to-br from-indigo-900 via-slate-900 to-slate-950 p-6 rounded-2xl text-white shadow-lg border border-indigo-500/30 space-y-3">
-                    <div class="flex items-center justify-between">
-                        <span class="bg-amber-400 text-slate-950 font-black text-[10px] px-2.5 py-0.5 rounded-full uppercase">KGB 리서치 파트너</span>
-                        <span class="text-xs text-indigo-300">getggul.com</span>
+                <!-- 🌟 [PBN 핵심 백링크] 정통 언론사 공식 제휴 금융 리포트 카드 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3 hover:border-indigo-300 transition-colors">
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
+                        <span class="bg-slate-100 text-indigo-700 text-[11px] font-bold px-2.5 py-0.5 rounded border border-slate-200">
+                            금융 기획 리포트
+                        </span>
+                        <span class="text-slate-400 text-[11px]">KGB 파트너</span>
                     </div>
-                    <h4 class="text-sm font-bold text-white newspaper-font leading-snug">
-                        👉 2026 빗썸 신규가입 이벤트 참여하고 빗썸 7만원 이벤트 현금 보너스 챙기기
+
+                    <h4 class="serif-title font-bold text-slate-900 text-base leading-snug hover:text-indigo-600 transition-colors">
+                        <a href="https://getggul.com/" target="_blank" rel="noopener" class="hover:underline">
+                            2026 빗썸 7만원 이벤트 & 신규가입 가입이벤트 초대코드 혜택 가이드
+                        </a>
                     </h4>
-                    <p class="text-xs text-slate-300 leading-relaxed">
-                        getggul.com 금융 꿀팁 리서치센터가 검증한 최신 현금 보너스 혜택 리포트를 확인해 보세요.
+
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        신규가입 2만 + 계좌연결 1만 + 거래 4만 원! 내 돈 0원으로 70,000원 전액 수령하는 초대코드 수칙을 공개합니다.
                     </p>
-                    <div class="pt-2">
-                        <a href="https://getggul.com/finance-tips/bithumb-70k-event.html" target="_blank" class="inline-flex items-center gap-1.5 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs px-4 py-2.5 rounded-xl shadow transition-all">
-                            <span>빗썸 7만원 이벤트 리포트 보러가기 ➔</span>
+
+                    <!-- Sitewide Target Link to getggul.com -->
+                    <div class="pt-1">
+                        <a href="https://getggul.com/" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors">
+                            <span>빗썸 7만원 이벤트 수령 가이드 읽기</span>
+                            <i class="fas fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- 18년 역대 기사 보관소 퀵 점프 목록 -->
-                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
-                    <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2 border-b border-slate-100 pb-2">
-                        <i class="fas fa-history text-indigo-600"></i>
-                        <span>18년 역대 주요 기사 DB</span>
+                <!-- 실시간 많이 본 기사 TOP 5 (PBN 내부 기사 100% 연결) -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                    <h3 class="font-black text-slate-900 text-base flex items-center gap-2 border-b border-slate-100 pb-3">
+                        <i class="fas fa-fire text-red-500"></i> 실시간 주요 보도 TOP 5
                     </h3>
-                    <div class="space-y-2 text-xs">
-                        <a href="archive/history_20080312.html" class="block p-2 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 font-medium border border-slate-100">📄 2008년 경기북부일보 창간 기사 원본</a>
-                        <a href="archive/history_20110712.html" class="block p-2 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 font-medium border border-slate-100">📄 2011년 경기북부 정치·사회 기사 원본</a>
-                        <a href="archive/history_20140517.html" class="block p-2 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 font-medium border border-slate-100">📄 2014년 지방선거 보도 기사 원본</a>
-                        <a href="archive/history_20150811.html" class="block p-2 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 font-medium border border-slate-100">📄 2015년 주요 경제 기사 원본</a>
-                    </div>
-                    <div class="pt-2">
-                        <a href="archive/index.html" class="block text-center text-xs font-bold text-indigo-600 hover:underline">2,047개 전체 기사 마스터 DB 보기 ➔</a>
+
+                    <ol class="space-y-3 text-xs">
+                        <li class="flex items-start gap-3">
+                            <span class="font-black text-red-600 text-sm">1</span>
+                            <div>
+                                <a href="./report_view.html?newsuid=17105" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                    동두천시, 저탄소 녹색성장 친환경상품 구매 및 보급 활성화 교육
+                                </a>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">사회·지역종합 | 조회 14,250</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-black text-red-500 text-sm">2</span>
+                            <div>
+                                <a href="./report_view.html?newsuid=14541" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                    양주시, 자족도시 도약 위한 활기찬 업무 혁신 및 부서별 실천 다짐
+                                </a>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">경제·산업 | 조회 11,820</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-black text-amber-500 text-sm">3</span>
+                            <div>
+                                <a href="./report_view.html?newsuid=17111" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                    주식 시장 세력 매매 실태 분석 및 개인투자자 피해 예방 제언
+                                </a>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">경제·증시 | 조회 9,410</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-black text-slate-400 text-sm">4</span>
+                            <div>
+                                <a href="./report_view.html?newsuid=16973" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                    연천경찰서, 2008년도 상반기 정기 인사발령 및 치안 역량 강화
+                                </a>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">사회·행정 | 조회 8,140</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-black text-slate-400 text-sm">5</span>
+                            <div>
+                                <a href="./report_view.html?newsuid=17079" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                    문화유산 계승과 우리말 바로쓰기 운동 확산 학술 세미나
+                                </a>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">문화·교육 | 조회 7,200</span>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- 카테고리별 주요 뉴스 섹션 (정치 / 경제 / 사회 / 아카이브) -->
+        <section class="space-y-6 pt-6 border-t border-slate-200">
+            <div class="flex justify-between items-end border-b-2 border-slate-900 pb-2">
+                <h2 class="serif-title font-black text-xl md:text-2xl text-slate-900 flex items-center gap-2">
+                    <i class="fas fa-newspaper text-indigo-600"></i> 분야별 주요 보도 뉴스
+                </h2>
+                <a href="./archive/index.html" class="text-xs font-bold text-indigo-600 hover:text-indigo-800">역대 기사 전체보기 (2,047건) ➔</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="news-card p-5 rounded-2xl space-y-3">
+                    <span class="text-[10px] font-bold bg-slate-100 text-indigo-700 px-2 py-0.5 rounded">정치·행정</span>
+                    <h3 class="font-bold text-slate-900 text-sm leading-snug">
+                        <a href="./sub.html?section=sc1" class="hover:text-indigo-600">
+                            지방자치단체 자치입법권 확대 및 행정 효율화 방안 공청회
+                        </a>
+                    </h3>
+                    <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                        도민 밀착형 행정 서비스 제공과 신속한 민원 처리를 위한 조례 개정안 검토.
+                    </p>
+                    <div class="pt-2 text-right">
+                        <a href="./sub.html?section=sc1" class="text-[11px] font-bold text-indigo-600 hover:underline">섹션 바로가기 ➔</a>
                     </div>
                 </div>
 
-            </aside>
-
-        </div>
-    </div>
-
-    <!-- 언론사 하단 푸터 (Sitewide 푸터 백링크 포함) -->
-    <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-xs mt-12">
-        <div class="max-w-6xl mx-auto px-4 space-y-6">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4 border-b border-slate-800 pb-6">
-                <div class="flex items-center gap-3">
-                    <span class="bg-indigo-600 text-white font-black px-2.5 py-1 rounded text-xs">KGB</span>
-                    <span class="text-lg font-bold text-white newspaper-font">경기북부일보</span>
+                <div class="news-card p-5 rounded-2xl space-y-3">
+                    <span class="text-[10px] font-bold bg-slate-100 text-indigo-700 px-2 py-0.5 rounded">경제·산업</span>
+                    <h3 class="font-bold text-slate-900 text-sm leading-snug">
+                        <a href="./sub.html?section=sc2" class="hover:text-indigo-600">
+                            지역 유망 중소기업 및 벤처 스타트업 기술금융 지원 체계 강화
+                        </a>
+                    </h3>
+                    <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                        신성장 동력 발굴과 일자리 창출을 위한 민관 합동 혁신 펀드 조성 논의.
+                    </p>
+                    <div class="pt-2 text-right">
+                        <a href="./sub.html?section=sc2" class="text-[11px] font-bold text-indigo-600 hover:underline">섹션 바로가기 ➔</a>
+                    </div>
                 </div>
-                <div class="flex items-center gap-4 text-slate-300 font-medium">
-                    <a href="index.html" class="hover:text-white">회사소개</a>
-                    <span>|</span>
-                    <a href="archive/index.html" class="hover:text-white">기사 아카이브</a>
-                    <span>|</span>
-                    <a href="https://getggul.com/finance-tips/bithumb-70k-event.html" target="_blank" class="text-amber-400 font-bold hover:underline">빗썸 신규가입 혜택 &amp; 빗썸 7만원 이벤트 리포트</a>
+
+                <div class="news-card p-5 rounded-2xl space-y-3">
+                    <span class="text-[10px] font-bold bg-slate-100 text-indigo-700 px-2 py-0.5 rounded">사회·이슈</span>
+                    <h3 class="font-bold text-slate-900 text-sm leading-snug">
+                        <a href="./sub.html?section=sc3" class="hover:text-indigo-600">
+                            지역 안전망 구축을 위한 민생 범죄 예방 및 CCTV 통합관제 고도화
+                        </a>
+                    </h3>
+                    <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                        생활안전 취약 지구 순찰 강화와 스마트 관제 시스템 연계로 범죄 예방 집중.
+                    </p>
+                    <div class="pt-2 text-right">
+                        <a href="./sub.html?section=sc3" class="text-[11px] font-bold text-indigo-600 hover:underline">섹션 바로가기 ➔</a>
+                    </div>
                 </div>
             </div>
+        </section>
+
+    </main>
+
+    <!-- 5. 정통 언론사 메타 정보 푸터 (Press Legal Footer + Sitewide Footer Link) -->
+    <footer class="bg-slate-950 text-slate-400 text-xs py-10 border-t-4 border-indigo-600 mt-12">
+        <div class="max-w-7xl mx-auto px-4 space-y-6">
             
-            <div class="text-center md:text-left space-y-1.5 text-slate-500 text-[11px] leading-relaxed">
-                <p>KGB News (경기북부일보) | 정식 언론 포털 아카이브 | 등록번호: 경기 아 00142호</p>
-                <p>본 포털의 모든 과거 기사는 Archive.org 보존 서버를 기반으로 포렌식 복원된 100% 정식 원본 데이터베이스입니다.</p>
-                <p>Copyright © 2008-2026 KGB News. All rights reserved.</p>
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-slate-800 pb-6">
+                <div class="flex items-center gap-3">
+                    <span class="serif-title text-xl font-black text-white">KGB NEWS</span>
+                    <span class="text-slate-500">|</span>
+                    <span class="text-slate-300 font-bold">케이지비 뉴스 미디어 그룹</span>
+                </div>
+                <div class="flex flex-wrap gap-4 text-slate-400">
+                    <a href="./archive/index.html" class="hover:text-white">기사 아카이브</a>
+                    <a href="#" class="hover:text-white">개인정보처리방침</a>
+                    <a href="#" class="hover:text-white">청소년보호정책</a>
+                    <a href="#" class="hover:text-white">기사제보</a>
+                    <a href="#" class="hover:text-white">고충처리인</a>
+                </div>
             </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-[11px] leading-relaxed text-slate-400">
+                <div>
+                    <p>등록번호: 서울 아-01824호 | 등록일자: 2008년 05월 12일 | 제호: KGB NEWS (케이지비 뉴스)</p>
+                    <p>발행인·편집인: 케이지비뉴스 미디어 그룹 | 주소: 서울특별시 영등포구 국회대로 76길 10</p>
+                    <p>기사제보 및 언론문의: press@kgbnews.kr | 전화번호: 02-1588-9000</p>
+                </div>
+                <div>
+                    <p>본 사이트의 모든 기사 및 콘텐츠는 저작권법의 보호를 받으며, 무단 전재·복사·배포를 금합니다.</p>
+                    <p>Copyright © 2008-2026 KGB NEWS Media Group. All rights reserved.</p>
+                </div>
+            </div>
+
+            <!-- 🔥 [푸터 영역 Sitewide 백링크 주입] -->
+            <div class="pt-4 border-t border-slate-800 flex flex-wrap justify-between items-center text-[11px] text-slate-400 gap-2">
+                <div>
+                    <span class="text-slate-500 font-bold">공식 제휴 리포트: </span>
+                    <a href="https://getggul.com/" target="_blank" rel="noopener" class="text-slate-300 hover:text-yellow-300 font-bold transition-colors underline decoration-slate-600">
+                        빗썸 7만원 이벤트 현금 혜택 & 빗썸 신규가입 가이드 (getggul.com)
+                    </a>
+                </div>
+                <div class="text-slate-500">
+                    파트너사: 겟꿀 금융허브 (GETGGUL)
+                </div>
+            </div>
+
         </div>
     </footer>
 
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        if (menuToggle && mobileNav) {
+            menuToggle.addEventListener('click', () => {
+                mobileNav.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>

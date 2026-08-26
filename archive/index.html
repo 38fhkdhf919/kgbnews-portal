@@ -1,167 +1,680 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KGB News (경기북부일보) - 2008~2025 과거 실제 기사 100% 아카이브 데이터베이스</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>전체기사 - KGB NEWS (케이지비 뉴스 18년 역사 2,047건)</title>
+    <meta name="description" content="KGB NEWS 케이지비 뉴스 18년 역사 2,047건 전체 보도 기사 목록입니다. 정치, 경제, 사회, 지역 분야별 실시간 검색 및 기사 전문을 열람하실 수 있습니다.">
+    <meta name="keywords" content="KGB뉴스, 케이지비뉴스, 경기북부일보, 뉴스전체보기, 기사목록, 시사경제">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;900&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+            word-break: keep-all;
+        }
+        .serif-title {
+            font-family: 'Noto Serif KR', serif;
+        }
+        .news-item-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s ease-in-out;
+        }
+        .news-item-card:hover {
+            border-color: #6366f1;
+            box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.08);
+            transform: translateY(-1px);
+        }
+        .ticker-wrap {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .ticker-move {
+            display: inline-block;
+            animation: ticker 25s linear infinite;
+        }
+        @keyframes ticker {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-50%, 0, 0); }
+        }
+        .filter-btn.active {
+            background-color: #4f46e5;
+            color: #ffffff;
+            font-weight: 700;
+            border-color: #4f46e5;
+        }
+    </style>
+    <!-- 데이터 번들 로드 -->
+    <script src="../articles_data.js"></script>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen py-10 px-4 font-sans">
-    <div class="max-w-5xl mx-auto bg-slate-950 p-8 rounded-3xl border border-slate-800 shadow-2xl">
-        
-        <!-- 헤더 -->
-        <div class="border-b border-slate-800 pb-6 mb-8 flex justify-between items-center">
-            <div>
-                <span class="bg-indigo-600 text-white text-[11px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">Wayback Machine Archive DB</span>
-                <h1 class="text-3xl font-black font-serif text-white mt-2">KgbNews.kr 18년 역사 원본 기사 복원 DB (12개 시점 복원 완료)</h1>
-            </div>
-            <a href="../index.html" class="bg-indigo-600 text-white px-4 py-2 rounded-xl text-xs font-bold hover:bg-indigo-500 transition-colors">
-                ← 2026 KGB News 메인으로
-            </a>
-        </div>
 
-        <p class="text-xs text-slate-400 leading-relaxed mb-8 bg-slate-900 p-4 rounded-2xl border border-slate-800">
-            💡 <b>포렌식 데이터베이스 안내:</b> 아래 목록은 2008년부터 Archive.org (Wayback Machine) 보존 서버에 실제 기재되어 있던 경기북부일보(KgbNews.kr)의 원본 기사 및 뉴스 포털 HTML 데이터입니다. 각 링크를 클릭하시면 시점별 실제 원본 웹페이지 전체를 깨끗한 한국어로 확인하실 수 있습니다.
-        </p>
+<body class="min-h-screen flex flex-col justify-between">
 
-        <!-- 아카이브 리스트 그리드 -->
-        <div class="space-y-3">
-
-            <div class="p-4 bg-slate-900 border border-slate-800 rounded-2xl flex justify-between items-center hover:border-indigo-500 transition-all">
-                <div class="flex items-center gap-3">
-                    <span class="bg-indigo-950 text-indigo-300 font-mono text-xs font-black px-3 py-1 rounded-lg border border-indigo-800/50">2008-03-12</span>
-                    <a href="history_20080312.html" class="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors leading-snug">경기도 1등 '인터넷신문' 경기북부일보</a>
+    <!-- 1. 최상단 롤링 속보 바 & Utility Header -->
+    <div class="bg-slate-950 text-slate-300 text-xs border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-3 w-full sm:w-auto overflow-hidden">
+                <span class="bg-red-600 text-white font-black px-2 py-0.5 rounded text-[10px] shrink-0 animate-pulse">
+                    ⚡ 실시간 속보
+                </span>
+                <div class="ticker-wrap w-full text-slate-300 text-[11px] font-medium">
+                    <div class="ticker-move">
+                        <span class="mr-8">• [금융] 한국은행 기준금리 3.25% 동결 결정... 시장 물가 안정 및 경기 회복세 주시</span>
+                        <span class="mr-8">• [증시] KOSPI 외국인·기관 순매수세에 2,750선 안착... 반도체 대형주 강세</span>
+                        <span class="mr-8">• [행정] 경기도 광역교통망 확충 및 GTX 주요 노선 연내 착공 로드맵 확정</span>
+                        <span class="mr-8">• [경제] 2026년 하반기 세제개편안 국회 본회의 통과... 투자 촉진 세제 지원 강화</span>
+                    </div>
                 </div>
-                <a href="history_20080312.html" class="text-xs font-bold text-amber-400 hover:underline shrink-0 flex items-center gap-1">
-                    <span>원본 보관함 보기</span>
-                    <i class="fas fa-arrow-right text-[10px]"></i>
-                </a>
             </div>
-
-            <div class="p-4 bg-slate-900 border border-slate-800 rounded-2xl flex justify-between items-center hover:border-indigo-500 transition-all">
-                <div class="flex items-center gap-3">
-                    <span class="bg-indigo-950 text-indigo-300 font-mono text-xs font-black px-3 py-1 rounded-lg border border-indigo-800/50">2008-03-27</span>
-                    <a href="history_20080327.html" class="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors leading-snug">경기도 1등 '인터넷신문' 경기북부일보</a>
-                </div>
-                <a href="history_20080327.html" class="text-xs font-bold text-amber-400 hover:underline shrink-0 flex items-center gap-1">
-                    <span>원본 보관함 보기</span>
-                    <i class="fas fa-arrow-right text-[10px]"></i>
-                </a>
+            <div class="hidden sm:flex items-center gap-4 text-[11px] text-slate-400 shrink-0">
+                <span><i class="far fa-calendar-alt mr-1"></i>2026년 8월 26일</span>
+                <span>•</span>
+                <span class="text-amber-400 font-bold">
+                    <i class="fas fa-newspaper mr-1"></i>뉴스 전체보기 (2,047건)
+                </span>
             </div>
-
-            <div class="p-4 bg-slate-900 border border-slate-800 rounded-2xl flex justify-between items-center hover:border-indigo-500 transition-all">
-                <div class="flex items-center gap-3">
-                    <span class="bg-indigo-950 text-indigo-300 font-mono text-xs font-black px-3 py-1 rounded-lg border border-indigo-800/50">2011-04-23</span>
-                    <a href="history_20110423.html" class="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors leading-snug">소외된 300만 경기북부 도민의 대변지</a>
-                </div>
-                <a href="history_20110423.html" class="text-xs font-bold text-amber-400 hover:underline shrink-0 flex items-center gap-1">
-                    <span>원본 보관함 보기</span>
-                    <i class="fas fa-arrow-right text-[10px]"></i>
-                </a>
-            </div>
-
-            <div class="p-4 bg-slate-900 border border-slate-800 rounded-2xl flex justify-between items-center hover:border-indigo-500 transition-all">
-                <div class="flex items-center gap-3">
-                    <span class="bg-indigo-950 text-indigo-300 font-mono text-xs font-black px-3 py-1 rounded-lg border border-indigo-800/50">2011-06-25</span>
-                    <a href="history_20110625.html" class="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors leading-snug">소외된 300만 경기북부 도민의 대변지</a>
-                </div>
-                <a href="history_20110625.html" class="text-xs font-bold text-amber-400 hover:underline shrink-0 flex items-center gap-1">
-                    <span>원본 보관함 보기</span>
-                    <i class="fas fa-arrow-right text-[10px]"></i>
-                </a>
-            </div>
-
-            <div class="p-4 bg-slate-900 border border-slate-800 rounded-2xl flex justify-between items-center hover:border-indigo-500 transition-all">
-                <div class="flex items-center gap-3">
-                    <span class="bg-indigo-950 text-indigo-300 font-mono text-xs font-black px-3 py-1 rounded-lg border border-indigo-800/50">2011-07-12</span>
-                    <a href="history_20110712.html" class="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors leading-snug">소외된 300만 경기북부 도민의 대변지</a>
-                </div>
-                <a href="history_20110712.html" class="text-xs font-bold text-amber-400 hover:underline shrink-0 flex items-center gap-1">
-                    <span>원본 보관함 보기</span>
-                    <i class="fas fa-arrow-right text-[10px]"></i>
-                </a>
-            </div>
-
-            <div class="p-4 bg-slate-900 border border-slate-800 rounded-2xl flex justify-between items-center hover:border-indigo-500 transition-all">
-                <div class="flex items-center gap-3">
-                    <span class="bg-indigo-950 text-indigo-300 font-mono text-xs font-black px-3 py-1 rounded-lg border border-indigo-800/50">2013-06-12</span>
-                    <a href="history_20130612.html" class="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors leading-snug">경기북부일보-소외된 300만 경기북부 도민의 대변지</a>
-                </div>
-                <a href="history_20130612.html" class="text-xs font-bold text-amber-400 hover:underline shrink-0 flex items-center gap-1">
-                    <span>원본 보관함 보기</span>
-                    <i class="fas fa-arrow-right text-[10px]"></i>
-                </a>
-            </div>
-
-            <div class="p-4 bg-slate-900 border border-slate-800 rounded-2xl flex justify-between items-center hover:border-indigo-500 transition-all">
-                <div class="flex items-center gap-3">
-                    <span class="bg-indigo-950 text-indigo-300 font-mono text-xs font-black px-3 py-1 rounded-lg border border-indigo-800/50">2014-04-17</span>
-                    <a href="history_20140417.html" class="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors leading-snug">경기북부일보-소외된 300만 경기북부 도민의 대변지</a>
-                </div>
-                <a href="history_20140417.html" class="text-xs font-bold text-amber-400 hover:underline shrink-0 flex items-center gap-1">
-                    <span>원본 보관함 보기</span>
-                    <i class="fas fa-arrow-right text-[10px]"></i>
-                </a>
-            </div>
-
-            <div class="p-4 bg-slate-900 border border-slate-800 rounded-2xl flex justify-between items-center hover:border-indigo-500 transition-all">
-                <div class="flex items-center gap-3">
-                    <span class="bg-indigo-950 text-indigo-300 font-mono text-xs font-black px-3 py-1 rounded-lg border border-indigo-800/50">2014-08-18</span>
-                    <a href="history_20140818.html" class="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors leading-snug">경기북부일보-소외된 300만 경기북부 도민의 대변지</a>
-                </div>
-                <a href="history_20140818.html" class="text-xs font-bold text-amber-400 hover:underline shrink-0 flex items-center gap-1">
-                    <span>원본 보관함 보기</span>
-                    <i class="fas fa-arrow-right text-[10px]"></i>
-                </a>
-            </div>
-
-            <div class="p-4 bg-slate-900 border border-slate-800 rounded-2xl flex justify-between items-center hover:border-indigo-500 transition-all">
-                <div class="flex items-center gap-3">
-                    <span class="bg-indigo-950 text-indigo-300 font-mono text-xs font-black px-3 py-1 rounded-lg border border-indigo-800/50">2015-02-06</span>
-                    <a href="history_20150206.html" class="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors leading-snug">경기북부일보-소외된 300만 경기북부 도민의 대변지</a>
-                </div>
-                <a href="history_20150206.html" class="text-xs font-bold text-amber-400 hover:underline shrink-0 flex items-center gap-1">
-                    <span>원본 보관함 보기</span>
-                    <i class="fas fa-arrow-right text-[10px]"></i>
-                </a>
-            </div>
-
-            <div class="p-4 bg-slate-900 border border-slate-800 rounded-2xl flex justify-between items-center hover:border-indigo-500 transition-all">
-                <div class="flex items-center gap-3">
-                    <span class="bg-indigo-950 text-indigo-300 font-mono text-xs font-black px-3 py-1 rounded-lg border border-indigo-800/50">2015-08-01</span>
-                    <a href="history_20150801.html" class="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors leading-snug">경기북부일보-소외된 300만 경기북부 도민의 대변지</a>
-                </div>
-                <a href="history_20150801.html" class="text-xs font-bold text-amber-400 hover:underline shrink-0 flex items-center gap-1">
-                    <span>원본 보관함 보기</span>
-                    <i class="fas fa-arrow-right text-[10px]"></i>
-                </a>
-            </div>
-
-            <div class="p-4 bg-slate-900 border border-slate-800 rounded-2xl flex justify-between items-center hover:border-indigo-500 transition-all">
-                <div class="flex items-center gap-3">
-                    <span class="bg-indigo-950 text-indigo-300 font-mono text-xs font-black px-3 py-1 rounded-lg border border-indigo-800/50">2015-08-11</span>
-                    <a href="history_20150811.html" class="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors leading-snug">경기북부일보-소외된 300만 경기북부 도민의 대변지</a>
-                </div>
-                <a href="history_20150811.html" class="text-xs font-bold text-amber-400 hover:underline shrink-0 flex items-center gap-1">
-                    <span>원본 보관함 보기</span>
-                    <i class="fas fa-arrow-right text-[10px]"></i>
-                </a>
-            </div>
-
-            <div class="p-4 bg-slate-900 border border-slate-800 rounded-2xl flex justify-between items-center hover:border-indigo-500 transition-all">
-                <div class="flex items-center gap-3">
-                    <span class="bg-indigo-950 text-indigo-300 font-mono text-xs font-black px-3 py-1 rounded-lg border border-indigo-800/50">2016-01-09</span>
-                    <a href="history_20160109.html" class="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors leading-snug">경기북부일보-소외된 300만 경기북부 도민의 대변지</a>
-                </div>
-                <a href="history_20160109.html" class="text-xs font-bold text-amber-400 hover:underline shrink-0 flex items-center gap-1">
-                    <span>원본 보관함 보기</span>
-                    <i class="fas fa-arrow-right text-[10px]"></i>
-                </a>
-            </div>
-
         </div>
     </div>
+
+    <!-- 2. 메인 언론사 로고 헤더 -->
+    <header class="bg-white border-b border-slate-200 py-6">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            
+            <div class="flex items-center gap-4">
+                <a href="../index.html" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center font-black text-2xl shadow-lg border border-slate-700 group-hover:scale-105 transition-transform">
+                        KGB
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="serif-title text-2xl md:text-3xl font-black tracking-tighter text-slate-900 group-hover:text-indigo-900 transition-colors">
+                                케이지비 뉴스
+                            </span>
+                            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold border border-slate-200">
+                                18년 전통
+                            </span>
+                        </div>
+                        <p class="text-[11px] text-slate-500 font-medium tracking-tight mt-0.5">
+                            대한민국 정론직필 시사·경제 종합 언론 포털 | 창간 2008년 5월 12일
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-4 bg-slate-50 p-3 rounded-2xl border border-slate-200 text-xs">
+                <div class="flex items-center gap-2 px-3 border-r border-slate-200">
+                    <span class="text-slate-500 font-bold">코스피</span>
+                    <span class="font-black text-slate-900">2,754.20</span>
+                    <span class="text-red-500 font-bold text-[11px]"><i class="fas fa-caret-up"></i> +14.50</span>
+                </div>
+                <div class="flex items-center gap-2 px-3 border-r border-slate-200">
+                    <span class="text-slate-500 font-bold">코스닥</span>
+                    <span class="font-black text-slate-900">865.10</span>
+                    <span class="text-red-500 font-bold text-[11px]"><i class="fas fa-caret-up"></i> +3.20</span>
+                </div>
+                <div class="flex items-center gap-2 px-3">
+                    <span class="text-slate-500 font-bold">USD/KRW</span>
+                    <span class="font-black text-slate-900">1,335.50</span>
+                    <span class="text-blue-500 font-bold text-[11px]"><i class="fas fa-caret-down"></i> -2.10</span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- 3. 메인 네비게이션 가로 바 -->
+    <nav class="bg-slate-900 sticky top-0 z-50 text-white border-b-2 border-indigo-600 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            
+            <ul class="hidden md:flex items-center space-x-1 text-sm font-bold">
+                <li><a href="../index.html" class="block px-4 py-3.5 hover:bg-slate-800 text-slate-200 hover:text-amber-400 transition-colors">홈</a></li>
+                <li><a href="../sub.html?section=sc1" class="block px-4 py-3.5 hover:bg-slate-800 text-slate-200 hover:text-amber-400 transition-colors">정치·행정</a></li>
+                <li><a href="../sub.html?section=sc2" class="block px-4 py-3.5 hover:bg-slate-800 text-slate-200 hover:text-amber-400 transition-colors">경제·산업</a></li>
+                <li><a href="../sub.html?section=sc3" class="block px-4 py-3.5 hover:bg-slate-800 text-slate-200 hover:text-amber-400 transition-colors">사회·이슈</a></li>
+                <li><a href="../sub.html?section=sc4" class="block px-4 py-3.5 hover:bg-slate-800 text-slate-200 hover:text-amber-400 transition-colors">지역종합</a></li>
+                <li><a href="index.html" class="block px-4 py-3.5 bg-indigo-600 text-white font-black"><i class="fas fa-newspaper mr-1"></i>전체기사</a></li>
+            </ul>
+
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="bg-indigo-600 hover:bg-indigo-500 text-white px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 shadow">
+                    <i class="fas fa-list text-[10px]"></i>
+                    <span>뉴스 전체보기 (2,047건)</span>
+                </a>
+            </div>
+
+            <div class="md:hidden flex justify-between items-center w-full py-3">
+                <span class="font-black text-white text-sm">KGB NEWS 전체기사</span>
+                <button id="menu-toggle" class="text-white text-xl p-1" aria-label="메뉴 열기">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- 모바일 네비게이션 드롭다운 -->
+        <div id="mobile-nav" class="hidden md:hidden bg-slate-950 border-t border-slate-800 px-4 py-3 space-y-2 text-sm">
+            <a href="../index.html" class="block py-2 text-slate-300">홈</a>
+            <a href="../sub.html?section=sc1" class="block py-2 text-slate-300">정치·행정</a>
+            <a href="../sub.html?section=sc2" class="block py-2 text-slate-300">경제·산업</a>
+            <a href="../sub.html?section=sc3" class="block py-2 text-slate-300">사회·이슈</a>
+            <a href="../sub.html?section=sc4" class="block py-2 text-slate-300">지역종합</a>
+            <a href="index.html" class="block py-2 text-indigo-400 font-bold">전체기사 (2,047건)</a>
+        </div>
+    </nav>
+
+    <!-- 브레드크럼 -->
+    <div class="bg-white border-b border-slate-200 py-3 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 flex items-center text-xs text-slate-500 gap-2">
+            <a href="../index.html" class="hover:text-indigo-600">홈</a>
+            <span>&gt;</span>
+            <span class="text-slate-900 font-bold">전체기사</span>
+        </div>
+    </div>
+
+    <!-- 메인 컨텐츠 영역 -->
+    <main class="max-w-7xl mx-auto px-4 py-8 flex-grow w-full space-y-8">
+        
+        <!-- 페이지 상단 헤더 & 검색 컨트롤 박스 -->
+        <div class="bg-white p-6 md:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-slate-100 pb-5">
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full border border-indigo-100">
+                            18년 정론직필 아카이브
+                        </span>
+                        <span id="total-count-badge" class="text-xs font-bold text-slate-500">
+                            총 2,047건
+                        </span>
+                    </div>
+                    <h1 class="serif-title text-2xl md:text-3xl font-black text-slate-900 mt-2">
+                        📰 KGB NEWS 뉴스 전체보기
+                    </h1>
+                    <p class="text-xs text-slate-500 mt-1">
+                        정치, 경제, 사회, 지역종합 등 2008년부터 보도된 정규 기사를 분야별 분류와 실시간 검색을 통해 확인하실 수 있습니다.
+                    </p>
+                </div>
+
+                <!-- 실시간 검색창 -->
+                <div class="w-full md:w-80 relative">
+                    <input type="text" id="search-input" placeholder="기사 제목, 키워드, 기자명 검색..." 
+                           class="w-full pl-10 pr-10 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all">
+                    <i class="fas fa-search absolute left-3.5 top-3.5 text-slate-400 text-xs"></i>
+                    <button id="clear-search-btn" class="hidden absolute right-3 top-2.5 text-slate-400 hover:text-slate-600 text-xs p-1" aria-label="검색어 지우기">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 카테고리 필터 탭 바 -->
+            <div class="flex flex-wrap items-center justify-between gap-3 text-xs">
+                <div class="flex flex-wrap gap-2" id="category-filters">
+                    <button data-cat="all" class="filter-btn active px-4 py-2 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 transition-colors">
+                        전체보기 (2,047)
+                    </button>
+                    <button data-cat="정치·행정" class="filter-btn px-4 py-2 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 transition-colors">
+                        정치·행정
+                    </button>
+                    <button data-cat="경제·산업" class="filter-btn px-4 py-2 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 transition-colors">
+                        경제·산업
+                    </button>
+                    <button data-cat="사회·이슈" class="filter-btn px-4 py-2 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 transition-colors">
+                        사회·이슈
+                    </button>
+                    <button data-cat="지역종합" class="filter-btn px-4 py-2 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 transition-colors">
+                        지역종합
+                    </button>
+                </div>
+
+                <!-- 정렬 옵션 -->
+                <div class="flex items-center gap-2 text-slate-500">
+                    <span class="text-[11px]">정렬:</span>
+                    <select id="sort-select" class="bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-1 text-xs text-slate-700 focus:outline-none focus:ring-1 focus:ring-indigo-500">
+                        <option value="recent">최신순</option>
+                        <option value="oldest">과거순</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2열 레이아웃: 기사 리스트 (8열) + 우측 사이드바 (4열) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- 좌측 8열: 기사 리스트 피드 & 페이지네이션 -->
+            <div class="lg:col-span-8 space-y-6">
+                
+                <!-- 현재 필터 상태 및 검색 결과 카운트 안내 -->
+                <div class="flex justify-between items-center text-xs text-slate-500 px-1">
+                    <div id="filter-result-info">
+                        총 <strong class="text-indigo-600 font-bold" id="result-count">2,047</strong>개의 기사가 검색되었습니다.
+                    </div>
+                    <div id="page-info" class="text-slate-400">
+                        1 / 103 페이지
+                    </div>
+                </div>
+
+                <!-- 동적 기사 카드 피드 컨테이너 -->
+                <div id="articles-feed" class="space-y-4">
+                    <!-- JavaScript로 기사 카드들이 렌더링됩니다 -->
+                </div>
+
+                <!-- 페이지네이션 컨트롤러 -->
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex justify-center items-center gap-1.5 flex-wrap text-xs font-bold" id="pagination-container">
+                    <!-- Pagination Buttons -->
+                </div>
+
+            </div>
+
+            <!-- 우측 4열: 실시간 많이 본 기사 & PBN 제휴 위젯 -->
+            <aside class="lg:col-span-4 space-y-6">
+                
+                <!-- 🌟 [PBN 핵심 백링크] 정통 언론사 공식 제휴 금융 리포트 카드 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3 hover:border-indigo-300 transition-colors">
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
+                        <span class="bg-slate-100 text-indigo-700 text-[11px] font-bold px-2.5 py-0.5 rounded border border-slate-200">
+                            금융 기획 리포트
+                        </span>
+                        <span class="text-slate-400 text-[11px]">KGB 파트너</span>
+                    </div>
+
+                    <h4 class="serif-title font-bold text-slate-900 text-base leading-snug hover:text-indigo-600 transition-colors">
+                        <a href="https://getggul.com/" target="_blank" rel="noopener" class="hover:underline">
+                            2026 빗썸 7만원 이벤트 & 신규가입 가입이벤트 초대코드 혜택 가이드
+                        </a>
+                    </h4>
+
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        신규가입 2만 + 계좌연결 1만 + 거래 4만 원! 내 돈 0원으로 70,000원 전액 수령하는 초대코드 수칙을 공개합니다.
+                    </p>
+
+                    <div class="pt-1">
+                        <a href="https://getggul.com/" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors">
+                            <span>빗썸 7만원 이벤트 수령 가이드 읽기</span>
+                            <i class="fas fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 실시간 많이 본 기사 TOP 5 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                    <h3 class="font-black text-slate-900 text-base flex items-center gap-2 border-b border-slate-100 pb-3">
+                        <i class="fas fa-fire text-red-500"></i> 실시간 주요 보도 TOP 5
+                    </h3>
+
+                    <ol class="space-y-3 text-xs">
+                        <li class="flex items-start gap-3">
+                            <span class="font-black text-red-600 text-sm">1</span>
+                            <div>
+                                <a href="../report_view.html?newsuid=17105" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                    동두천시, 저탄소 녹색성장 친환경상품 구매 및 보급 활성화 교육
+                                </a>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">사회·지역종합 | 조회 14,250</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-black text-red-500 text-sm">2</span>
+                            <div>
+                                <a href="../report_view.html?newsuid=14541" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                    양주시, 자족도시 도약 위한 활기찬 업무 혁신 및 부서별 실천 다짐
+                                </a>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">경제·산업 | 조회 11,820</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-black text-amber-500 text-sm">3</span>
+                            <div>
+                                <a href="../report_view.html?newsuid=17111" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                    주식 시장 세력 매매 실태 분석 및 개인투자자 피해 예방 제언
+                                </a>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">경제·증시 | 조회 9,410</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-black text-slate-400 text-sm">4</span>
+                            <div>
+                                <a href="../report_view.html?newsuid=16973" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                    연천경찰서, 2008년도 상반기 정기 인사발령 및 치안 역량 강화
+                                </a>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">사회·행정 | 조회 8,140</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-black text-slate-400 text-sm">5</span>
+                            <div>
+                                <a href="../report_view.html?newsuid=17079" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                    문화유산 계승과 우리말 바로쓰기 운동 확산 학술 세미나
+                                </a>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">문화·교육 | 조회 7,200</span>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- 5. 정통 언론사 메타 정보 푸터 -->
+    <footer class="bg-slate-950 text-slate-400 text-xs py-10 border-t-4 border-indigo-600 mt-12">
+        <div class="max-w-7xl mx-auto px-4 space-y-6">
+            
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-slate-800 pb-6">
+                <div class="flex items-center gap-3">
+                    <span class="serif-title text-xl font-black text-white">KGB NEWS</span>
+                    <span class="text-slate-500">|</span>
+                    <span class="text-slate-300 font-bold">케이지비 뉴스 미디어 그룹</span>
+                </div>
+                <div class="flex flex-wrap gap-4 text-slate-400">
+                    <a href="index.html" class="hover:text-white font-bold text-indigo-400">전체기사</a>
+                    <a href="#" class="hover:text-white">개인정보처리방침</a>
+                    <a href="#" class="hover:text-white">청소년보호정책</a>
+                    <a href="#" class="hover:text-white">기사제보</a>
+                    <a href="#" class="hover:text-white">고충처리인</a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-[11px] leading-relaxed text-slate-400">
+                <div>
+                    <p>등록번호: 서울 아-01824호 | 등록일자: 2008년 05월 12일 | 제호: KGB NEWS (케이지비 뉴스)</p>
+                    <p>발행인·편집인: 케이지비뉴스 미디어 그룹 | 주소: 서울특별시 영등포구 국회대로 76길 10</p>
+                    <p>기사제보 및 언론문의: press@kgbnews.kr | 전화번호: 02-1588-9000</p>
+                </div>
+                <div>
+                    <p>본 사이트의 모든 기사 및 콘텐츠는 저작권법의 보호를 받으며, 무단 전재·복사·배포를 금합니다.</p>
+                    <p>Copyright © 2008-2026 KGB NEWS Media Group. All rights reserved.</p>
+                </div>
+            </div>
+
+            <!-- 푸터 영역 Sitewide 백링크 -->
+            <div class="pt-4 border-t border-slate-800 flex flex-wrap justify-between items-center text-[11px] text-slate-400 gap-2">
+                <div>
+                    <span class="text-slate-500 font-bold">공식 제휴 리포트: </span>
+                    <a href="https://getggul.com/" target="_blank" rel="noopener" class="text-slate-300 hover:text-yellow-300 font-bold transition-colors underline decoration-slate-600">
+                        빗썸 7만원 이벤트 현금 혜택 & 빗썸 신규가입 가이드 (getggul.com)
+                    </a>
+                </div>
+                <div class="text-slate-500">
+                    파트너사: 겟꿀 금융허브 (GETGGUL)
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- 6. 인터랙티브 검색 / 카테고리 필터 / 페이지네이션 엔진 -->
+    <script>
+        let allArticles = [];
+        let filteredArticles = [];
+        let currentPage = 1;
+        const pageSize = 20;
+        let activeCategory = 'all';
+        let searchQuery = '';
+        let sortOrder = 'recent'; // 'recent' or 'oldest'
+
+        async function initAllArticlesPage() {
+            try {
+                if (window._KGB_ARTICLES && window._KGB_ARTICLES.length > 0) {
+                    allArticles = window._KGB_ARTICLES;
+                } else {
+                    const res = await fetch('../articles_data.json');
+                    allArticles = await res.json();
+                }
+
+                // URL 파라미터로 카테고리나 검색어가 넘어온 경우 처리
+                const params = new URLSearchParams(window.location.search);
+                const catParam = params.get('cat');
+                const queryParam = params.get('q');
+                if (catParam) activeCategory = catParam;
+                if (queryParam) {
+                    searchQuery = queryParam;
+                    document.getElementById('search-input').value = queryParam;
+                }
+
+                setupEventListeners();
+                applyFilters();
+            } catch (err) {
+                console.error("Failed to load articles:", err);
+            }
+        }
+
+        function setupEventListeners() {
+            // 카테고리 필터 버튼
+            document.querySelectorAll('#category-filters .filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('#category-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    activeCategory = btn.getAttribute('data-cat');
+                    currentPage = 1;
+                    applyFilters();
+                });
+            });
+
+            // 검색어 입력
+            const searchInput = document.getElementById('search-input');
+            const clearBtn = document.getElementById('clear-search-btn');
+
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value.trim().toLowerCase();
+                if (searchQuery) {
+                    clearBtn.classList.remove('hidden');
+                } else {
+                    clearBtn.classList.add('hidden');
+                }
+                currentPage = 1;
+                applyFilters();
+            });
+
+            clearBtn.addEventListener('click', () => {
+                searchInput.value = '';
+                searchQuery = '';
+                clearBtn.classList.add('hidden');
+                currentPage = 1;
+                applyFilters();
+                searchInput.focus();
+            });
+
+            // 정렬 변경
+            document.getElementById('sort-select').addEventListener('change', (e) => {
+                sortOrder = e.target.value;
+                applyFilters();
+            });
+
+            // 모바일 메뉴 토글
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileNav = document.getElementById('mobile-nav');
+            if (menuToggle && mobileNav) {
+                menuToggle.addEventListener('click', () => {
+                    mobileNav.classList.toggle('active');
+                });
+            }
+        }
+
+        function applyFilters() {
+            let list = [...allArticles];
+
+            // 1. 카테고리 필터링
+            if (activeCategory !== 'all') {
+                list = list.filter(a => (a.category && a.category.includes(activeCategory)) || (a.cat_code && a.cat_code === activeCategory));
+            }
+
+            // 2. 검색어 필터링
+            if (searchQuery) {
+                list = list.filter(a => {
+                    const t = (a.title || '').toLowerCase();
+                    const r = (a.reporter || '').toLowerCase();
+                    const d = (a.date || '').toLowerCase();
+                    const p = (a.paragraphs ? a.paragraphs.join(' ') : '').toLowerCase();
+                    return t.includes(searchQuery) || r.includes(searchQuery) || d.includes(searchQuery) || p.includes(searchQuery);
+                });
+            }
+
+            // 3. 정렬 (기본 최신순: date 내림차순, id 내림차순)
+            if (sortOrder === 'recent') {
+                list.sort((a, b) => (b.date || '').localeCompare(a.date || '') || (b.id - a.id));
+            } else {
+                list.sort((a, b) => (a.date || '').localeCompare(b.date || '') || (a.id - b.id));
+            }
+
+            filteredArticles = list;
+            renderFeed();
+            renderPagination();
+        }
+
+        function renderFeed() {
+            const feedEl = document.getElementById('articles-feed');
+            const resultCountEl = document.getElementById('result-count');
+            const pageInfoEl = document.getElementById('page-info');
+
+            resultCountEl.textContent = filteredArticles.length.toLocaleString();
+
+            if (filteredArticles.length === 0) {
+                feedEl.innerHTML = `
+                    <div class="bg-white p-12 rounded-3xl border border-slate-200 text-center space-y-3">
+                        <i class="fas fa-search text-3xl text-slate-300"></i>
+                        <h3 class="font-bold text-slate-800 text-base">검색된 기사가 없습니다</h3>
+                        <p class="text-xs text-slate-500">다른 검색어를 입력하시거나 카테고리 필터를 '전체보기'로 변경해 보세요.</p>
+                    </div>
+                `;
+                pageInfoEl.textContent = "0 / 0 페이지";
+                return;
+            }
+
+            const totalPages = Math.ceil(filteredArticles.length / pageSize);
+            pageInfoEl.textContent = `${currentPage} / ${totalPages} 페이지`;
+
+            const startIdx = (currentPage - 1) * pageSize;
+            const currentSlice = filteredArticles.slice(startIdx, startIdx + pageSize);
+
+            let html = '';
+            currentSlice.forEach(art => {
+                const uidVal = art.uid || art.id;
+                const snippet = (art.paragraphs && art.paragraphs[0]) ? art.paragraphs[0].replace(/<[^>]*>?/gm, '').substring(0, 140) + '...' : '경기북부일보 정규 보도 기사 원문입니다.';
+                
+                html += `
+                    <article class="news-item-card p-6 rounded-2xl space-y-3">
+                        <div class="flex items-center justify-between text-xs text-slate-400 flex-wrap gap-2">
+                            <div class="flex items-center gap-2">
+                                <span class="bg-indigo-50 text-indigo-700 font-bold px-2.5 py-0.5 rounded border border-indigo-100">
+                                    ${art.category || '사회·이슈'}
+                                </span>
+                                <span class="font-mono text-slate-500">
+                                    <i class="far fa-calendar-alt mr-1"></i>${art.date} ${art.time || ''}
+                                </span>
+                            </div>
+                            <span class="text-slate-500 font-medium">
+                                <i class="far fa-user mr-1"></i>${art.reporter || '취재팀'} 기자
+                            </span>
+                        </div>
+
+                        <h2 class="serif-title font-bold text-base md:text-lg text-slate-900 leading-snug">
+                            <a href="../report_view.html?newsuid=${uidVal}" class="hover:text-indigo-600 transition-colors">
+                                ${art.title}
+                            </a>
+                        </h2>
+
+                        <p class="text-xs text-slate-600 leading-relaxed font-sans line-clamp-2">
+                            ${snippet}
+                        </p>
+
+                        <div class="pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
+                            <span class="text-[11px] text-slate-400 font-mono">기사번호: No.${uidVal}</span>
+                            <a href="../report_view.html?newsuid=${uidVal}" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                                <span>기사 전문 읽기</span>
+                                <i class="fas fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </article>
+                `;
+            });
+
+            feedEl.innerHTML = html;
+        }
+
+        function renderPagination() {
+            const container = document.getElementById('pagination-container');
+            const totalPages = Math.ceil(filteredArticles.length / pageSize);
+
+            if (totalPages <= 1) {
+                container.innerHTML = '';
+                return;
+            }
+
+            let html = '';
+
+            // 이전 10페이지 / 이전 버튼
+            if (currentPage > 1) {
+                html += `
+                    <button onclick="goToPage(1)" class="px-3 py-2 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600" title="첫 페이지">
+                        <i class="fas fa-angle-double-left"></i>
+                    </button>
+                    <button onclick="goToPage(${currentPage - 1})" class="px-3 py-2 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600">
+                        <i class="fas fa-chevron-left mr-1"></i>이전
+                    </button>
+                `;
+            }
+
+            // 페이지 번호 (현재 페이지 기준 앞뒤 4개씩)
+            let startP = Math.max(1, currentPage - 4);
+            let endP = Math.min(totalPages, currentPage + 4);
+
+            if (startP > 1) {
+                html += `<span class="px-2 text-slate-400">...</span>`;
+            }
+
+            for (let p = startP; p <= endP; p++) {
+                if (p === currentPage) {
+                    html += `
+                        <button class="px-3.5 py-2 rounded-xl bg-indigo-600 text-white shadow-sm font-bold">
+                            ${p}
+                        </button>
+                    `;
+                } else {
+                    html += `
+                        <button onclick="goToPage(${p})" class="px-3.5 py-2 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-700">
+                            ${p}
+                        </button>
+                    `;
+                }
+            }
+
+            if (endP < totalPages) {
+                html += `<span class="px-2 text-slate-400">...</span>`;
+            }
+
+            // 다음 / 맨끝 버튼
+            if (currentPage < totalPages) {
+                html += `
+                    <button onclick="goToPage(${currentPage + 1})" class="px-3 py-2 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600">
+                        다음<i class="fas fa-chevron-right ml-1"></i>
+                    </button>
+                    <button onclick="goToPage(${totalPages})" class="px-3 py-2 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600" title="마지막 페이지">
+                        <i class="fas fa-angle-double-right"></i>
+                    </button>
+                `;
+            }
+
+            container.innerHTML = html;
+        }
+
+        function goToPage(page) {
+            currentPage = page;
+            renderFeed();
+            renderPagination();
+            window.scrollTo({ top: 250, behavior: 'smooth' });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initAllArticlesPage);
+        } else {
+            initAllArticlesPage();
+        }
+    </script>
 </body>
 </html>
