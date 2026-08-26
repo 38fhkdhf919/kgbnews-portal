@@ -43,7 +43,7 @@
                 <span><i class="far fa-calendar-alt mr-1"></i>2026년 8월 26일</span>
                 <span>•</span>
                 <a href="../archive/index.html" class="hover:text-amber-400 transition-colors font-bold">
-                    <i class="fas fa-archive mr-1"></i>기사 아카이브 보관소 (2,047건)
+                    <i class="fas fa-newspaper mr-1"></i>뉴스 전체보기 (2,047건)
                 </a>
             </div>
         </div>
@@ -102,13 +102,13 @@
                 <li><a href="../sub.html?section=sc2" class="block px-4 py-3.5 hover:bg-slate-800 text-slate-200 hover:text-amber-400">경제·산업</a></li>
                 <li><a href="../sub.html?section=sc3" class="block px-4 py-3.5 hover:bg-slate-800 text-slate-200 hover:text-amber-400">사회·이슈</a></li>
                 <li><a href="../sub.html?section=sc4" class="block px-4 py-3.5 hover:bg-slate-800 text-slate-200 hover:text-amber-400">지역종합</a></li>
-                <li><a href="../archive/index.html" class="block px-4 py-3.5 bg-indigo-600 text-yellow-300 font-black"><i class="fas fa-database mr-1"></i>역대 기사 보관소</a></li>
+                <li><a href="../archive/index.html" class="block px-4 py-3.5 bg-indigo-600 text-yellow-300 font-black"><i class="fas fa-database mr-1"></i>전체기사</a></li>
             </ul>
 
             <div class="flex items-center gap-3">
                 <a href="../archive/index.html" class="bg-indigo-600 hover:bg-indigo-500 text-white px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 shadow">
-                    <i class="fas fa-archive text-[10px]"></i>
-                    <span>기사 아카이브 DB</span>
+                    <i class="fas fa-newspaper text-[10px]"></i>
+                    <span>뉴스 전체보기</span>
                 </a>
             </div>
         </div>
@@ -241,7 +241,7 @@
                     <span class="text-slate-300 font-bold">케이지비 뉴스 미디어 그룹</span>
                 </div>
                 <div class="flex flex-wrap gap-4 text-slate-400">
-                    <a href="../archive/index.html" class="hover:text-white">기사 아카이브</a>
+                    <a href="../archive/index.html" class="hover:text-white">전체기사</a>
                     <a href="#" class="hover:text-white">개인정보처리방침</a>
                     <a href="#" class="hover:text-white">청소년보호정책</a>
                     <a href="#" class="hover:text-white">기사제보</a>
