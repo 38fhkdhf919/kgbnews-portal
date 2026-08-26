@@ -311,45 +311,45 @@
                             <span class="font-black text-red-600 text-sm">1</span>
                             <div>
                                 <a href="../report_view.html?newsuid=17105" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
-                                    동두천시, 저탄소 녹색성장 친환경상품 구매 및 보급 활성화 교육
+                                    동두천시, 2008년도 상반기 중소기업 육성자금 35억원 긴급 지원
                                 </a>
-                                <span class="text-[10px] text-slate-400 mt-0.5 block">사회·지역종합 | 조회 14,250</span>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">경제·산업 | 조회 14,250</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="font-black text-red-500 text-sm">2</span>
                             <div>
                                 <a href="../report_view.html?newsuid=14541" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
-                                    양주시, 자족도시 도약 위한 활기찬 업무 혁신 및 부서별 실천 다짐
+                                    양주시, 도민 평생학습원 교육 과정 개강... 맞춤형 직업 교육 인기
                                 </a>
-                                <span class="text-[10px] text-slate-400 mt-0.5 block">경제·산업 | 조회 11,820</span>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">지역종합 | 조회 11,820</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="font-black text-amber-500 text-sm">3</span>
                             <div>
                                 <a href="../report_view.html?newsuid=17111" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
-                                    주식 시장 세력 매매 실태 분석 및 개인투자자 피해 예방 제언
+                                    의정부시, 2008년도 행정혁신 및 도민 체감형 민원 행정 서비스 대폭 강화
                                 </a>
-                                <span class="text-[10px] text-slate-400 mt-0.5 block">경제·증시 | 조회 9,410</span>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">정치·행정 | 조회 9,410</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="font-black text-slate-400 text-sm">4</span>
                             <div>
                                 <a href="../report_view.html?newsuid=16973" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
-                                    연천경찰서, 2008년도 상반기 정기 인사발령 및 치안 역량 강화
+                                    연천군, 봄철 산불방지 대책본부 본격 가동... 산림 인접지 소각 행위 집중 단속
                                 </a>
-                                <span class="text-[10px] text-slate-400 mt-0.5 block">사회·행정 | 조회 8,140</span>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">사회·이슈 | 조회 8,140</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="font-black text-slate-400 text-sm">5</span>
                             <div>
                                 <a href="../report_view.html?newsuid=17079" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
-                                    문화유산 계승과 우리말 바로쓰기 운동 확산 학술 세미나
+                                    포천시, 향토 문화유산 발굴 및 역사문화 테마 둘레길 조성 박차
                                 </a>
-                                <span class="text-[10px] text-slate-400 mt-0.5 block">문화·교육 | 조회 7,200</span>
+                                <span class="text-[10px] text-slate-400 mt-0.5 block">지역종합 | 조회 7,200</span>
                             </div>
                         </li>
                     </ol>
@@ -416,7 +416,7 @@
         const pageSize = 20;
         let activeCategory = 'all';
         let searchQuery = '';
-        let sortOrder = 'recent'; // 'recent' or 'oldest'
+        let sortOrder = 'recent';
 
         async function initAllArticlesPage() {
             try {
@@ -427,7 +427,6 @@
                     allArticles = await res.json();
                 }
 
-                // URL 파라미터로 카테고리나 검색어가 넘어온 경우 처리
                 const params = new URLSearchParams(window.location.search);
                 const catParam = params.get('cat');
                 const queryParam = params.get('q');
@@ -445,7 +444,6 @@
         }
 
         function setupEventListeners() {
-            // 카테고리 필터 버튼
             document.querySelectorAll('#category-filters .filter-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
                     document.querySelectorAll('#category-filters .filter-btn').forEach(b => b.classList.remove('active'));
@@ -456,7 +454,6 @@
                 });
             });
 
-            // 검색어 입력
             const searchInput = document.getElementById('search-input');
             const clearBtn = document.getElementById('clear-search-btn');
 
@@ -480,13 +477,11 @@
                 searchInput.focus();
             });
 
-            // 정렬 변경
             document.getElementById('sort-select').addEventListener('change', (e) => {
                 sortOrder = e.target.value;
                 applyFilters();
             });
 
-            // 모바일 메뉴 토글
             const menuToggle = document.getElementById('menu-toggle');
             const mobileNav = document.getElementById('mobile-nav');
             if (menuToggle && mobileNav) {
@@ -499,12 +494,10 @@
         function applyFilters() {
             let list = [...allArticles];
 
-            // 1. 카테고리 필터링
             if (activeCategory !== 'all') {
                 list = list.filter(a => (a.category && a.category.includes(activeCategory)) || (a.cat_code && a.cat_code === activeCategory));
             }
 
-            // 2. 검색어 필터링
             if (searchQuery) {
                 list = list.filter(a => {
                     const t = (a.title || '').toLowerCase();
@@ -515,7 +508,6 @@
                 });
             }
 
-            // 3. 정렬 (기본 최신순: date 내림차순, id 내림차순)
             if (sortOrder === 'recent') {
                 list.sort((a, b) => (b.date || '').localeCompare(a.date || '') || (b.id - a.id));
             } else {
@@ -608,7 +600,6 @@
 
             let html = '';
 
-            // 이전 10페이지 / 이전 버튼
             if (currentPage > 1) {
                 html += `
                     <button onclick="goToPage(1)" class="px-3 py-2 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600" title="첫 페이지">
@@ -620,7 +611,6 @@
                 `;
             }
 
-            // 페이지 번호 (현재 페이지 기준 앞뒤 4개씩)
             let startP = Math.max(1, currentPage - 4);
             let endP = Math.min(totalPages, currentPage + 4);
 
@@ -648,7 +638,6 @@
                 html += `<span class="px-2 text-slate-400">...</span>`;
             }
 
-            // 다음 / 맨끝 버튼
             if (currentPage < totalPages) {
                 html += `
                     <button onclick="goToPage(${currentPage + 1})" class="px-3 py-2 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600">

@@ -43,12 +43,6 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10000</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10001</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -56,6 +50,12 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10002</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10003</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -79,12 +79,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10006</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10007</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -97,37 +91,37 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=15</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10009</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=26</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10010</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=38</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10011</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=44</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10012</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=45</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10013</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=46</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10014</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -199,31 +193,37 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=29</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10026</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=39</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10027</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=40</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10028</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=41</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10029</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=42</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10030</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10031</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -241,13 +241,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10033</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=58</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10034</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -277,6 +271,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10039</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=2</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -295,12 +295,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10042</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10043</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -313,25 +307,25 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=15</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10045</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=44</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10046</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=45</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10047</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=46</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10048</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -391,31 +385,37 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=29</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10058</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=39</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10059</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=40</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10060</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=41</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10061</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=42</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10062</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10063</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -428,12 +428,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=2</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=58</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -475,6 +469,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10072</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=17105</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -493,7 +493,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10075</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10076</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -505,7 +505,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10077</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10078</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -535,7 +535,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10082</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10083</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -553,12 +553,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10085</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10086</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -566,6 +560,12 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10087</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10088</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -841,7 +841,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10133</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10134</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -853,7 +853,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10135</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10136</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -865,7 +865,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10137</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10138</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1117,7 +1117,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=46</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10180</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1171,7 +1171,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10188</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10189</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1201,7 +1201,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10193</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10194</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1399,7 +1399,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10226</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10227</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1411,7 +1411,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10228</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10229</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1471,19 +1471,19 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10238</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10239</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=86</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10240</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=87</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10241</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1561,7 +1561,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10253</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10254</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1597,7 +1597,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10259</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10260</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1657,7 +1657,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10269</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10270</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1669,49 +1669,49 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=1</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=19</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=1</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=19</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=1</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=20</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=1</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=21</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10275</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10276</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=1</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=20</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=1</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=21</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10278</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10279</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1729,7 +1729,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10281</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10282</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1759,7 +1759,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10286</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10287</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1771,7 +1771,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10288</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10289</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1837,12 +1837,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10299</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10300</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -1850,6 +1844,12 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10301</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10302</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1873,7 +1873,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10305</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10306</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -1945,7 +1945,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10317</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10318</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2131,7 +2131,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10348</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10349</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2144,18 +2144,18 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=14477</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10351</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10352</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10353</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2251,12 +2251,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10368</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10369</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -2275,19 +2269,25 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10372</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=14331</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10373</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10374</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10374</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10375</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2317,7 +2317,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10379</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10380</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2371,19 +2371,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10388</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10389</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=17709</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10390</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2395,7 +2389,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10392</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=17709</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2497,7 +2491,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=87</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10409</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10410</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2509,19 +2509,19 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10411</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10412</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=88</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10413</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=99</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10414</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2533,25 +2533,19 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10415</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10416</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=19731</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10417</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10418</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=19731</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2569,7 +2563,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=46</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10421</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2582,6 +2576,12 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10423</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10424</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2600,12 +2600,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=4</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10427</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2713,25 +2707,25 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=125</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10445</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=128</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10446</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10447</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=11</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10448</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2755,6 +2749,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10452</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=4</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -2773,25 +2773,19 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10455</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10456</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=138</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10457</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=142</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10458</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2845,6 +2839,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10467</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=1</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -2864,12 +2864,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38468</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10471</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2930,6 +2924,12 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10481</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10482</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -3013,7 +3013,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10495</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10496</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -3037,7 +3037,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10499</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10500</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -3145,13 +3145,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10517</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10518</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10518</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10519</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -3217,7 +3217,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10529</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10530</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -3295,12 +3295,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10542</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10543</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -3356,6 +3350,12 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10552</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10553</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -3493,12 +3493,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10575</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10576</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -3559,6 +3553,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10586</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38512</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -3602,12 +3602,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38421</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10594</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -3673,6 +3667,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10605</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=31088</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -3728,12 +3728,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=34882</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10615</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -3799,6 +3793,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10626</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=30293</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -3847,13 +3847,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10634</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10635</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10635</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10636</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -3866,12 +3866,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38443</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10638</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -3931,6 +3925,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10648</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=29244</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -3955,13 +3955,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10652</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10653</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10653</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10654</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -4069,7 +4069,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10671</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10672</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -4082,12 +4082,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38346</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10674</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -4196,6 +4190,12 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10692</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10693</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -4417,7 +4417,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10729</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10730</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -4447,13 +4447,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10734</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10735</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10735</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10736</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -4591,7 +4591,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10758</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10759</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -4616,12 +4616,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38300</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10763</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -4711,6 +4705,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10778</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38406</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -4729,19 +4729,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10781</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10782</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38460</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10783</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -4813,6 +4807,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10795</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38449</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -4843,19 +4843,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10800</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10801</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38306</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10802</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -4951,6 +4945,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10818</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38160</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -4975,7 +4975,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10822</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10823</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -4988,12 +4988,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38508</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10825</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -5065,6 +5059,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10837</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=33023</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -5101,7 +5101,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10843</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10844</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -5120,12 +5120,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38119</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10847</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -5210,6 +5204,12 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=10861</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10862</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -5491,7 +5491,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10908</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10909</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -5875,7 +5875,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10972</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10973</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -5911,7 +5911,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10978</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10979</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -5971,13 +5971,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10988</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10989</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10989</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10990</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -5989,7 +5989,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10991</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10992</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6007,7 +6007,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10994</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10995</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6031,7 +6031,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=10998</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=10999</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6049,13 +6049,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11001</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11002</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11002</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11003</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6079,7 +6079,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11006</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11007</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6133,7 +6133,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11015</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11016</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6295,7 +6295,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11042</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11043</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6349,7 +6349,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11051</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11052</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6751,12 +6751,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11118</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=11119</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -6823,13 +6817,19 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11130</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=11</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11131</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11132</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6847,7 +6847,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11134</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11135</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6866,12 +6866,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=11</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11138</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6883,6 +6877,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11140</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=11</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -6890,12 +6890,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=1</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11142</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6907,7 +6901,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=1</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11144</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6931,7 +6925,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11148</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=1</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11149</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6956,12 +6956,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=11</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11153</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6973,7 +6967,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=1</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11155</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -6991,7 +6985,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11158</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=1</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11159</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -7021,19 +7021,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11163</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11164</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38429</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11165</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -7117,6 +7111,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11179</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38389</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -7136,12 +7136,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38005</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11183</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -7249,6 +7243,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11201</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=37991</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -7268,12 +7268,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38007</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11205</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -7339,6 +7333,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11216</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=34177</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -7387,7 +7387,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11224</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11225</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -7406,12 +7406,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38309</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11228</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -7495,6 +7489,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11242</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38400</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -7514,12 +7514,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38437</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11246</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -7549,13 +7543,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=38399</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11251</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11252</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=38399</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -7580,6 +7574,12 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=11256</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11257</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -7927,12 +7927,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11314</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=11315</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -7987,6 +7981,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11324</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=158</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -7994,12 +7994,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=36268</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11326</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -8054,6 +8048,12 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=11335</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11336</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -8713,12 +8713,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11445</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=11446</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -8761,7 +8755,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=148</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11453</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11454</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -10783,12 +10783,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11790</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=11791</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -10843,13 +10837,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=2</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11800</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11801</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=2</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -10939,13 +10933,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11816</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11817</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11029,13 +11023,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=18286</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11831</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11832</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=18286</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11065,13 +11059,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=38978</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11837</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11838</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=38978</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11083,13 +11077,19 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11840</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38919</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11841</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11842</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11102,12 +11102,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=34789</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11844</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11131,13 +11125,19 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11848</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=11</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11849</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11850</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11149,19 +11149,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11851</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11852</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=38796</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11853</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11179,25 +11173,25 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11856</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=33463</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11857</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11858</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=11</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11859</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11245,13 +11239,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=2</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11867</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11868</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=2</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11269,19 +11263,19 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=148</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11871</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11872</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=1508</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11873</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11329,13 +11323,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=4</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11881</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11882</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=4</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11359,13 +11353,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=17587</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11886</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11887</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=17587</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11377,13 +11371,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=3</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11889</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11890</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=3</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11413,25 +11407,25 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=144</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11895</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=147</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11896</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=148</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11897</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=151</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11898</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11455,6 +11449,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11902</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=2</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -11468,12 +11468,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=4</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11905</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11563,19 +11557,19 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11920</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=5134</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11921</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=160</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11922</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11593,7 +11587,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=151</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11925</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=11926</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11612,12 +11612,6 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=2</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11929</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11749,19 +11743,19 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11951</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=283</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11952</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=286</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11953</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=289</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11803,13 +11797,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11960</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=280</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11961</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=163</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11821,19 +11815,19 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11963</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=301</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11964</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=4</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11965</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=291</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11845,31 +11839,31 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11967</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=294</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11968</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=304</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11969</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=12</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11970</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=241</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11971</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=275</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11881,67 +11875,67 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11973</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=308</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11974</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=243</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11975</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=278</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11976</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=246</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11977</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=277</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11978</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=3</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11979</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=296</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11980</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=306</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11981</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=303</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11982</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=288</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11983</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=161</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -11959,7 +11953,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11986</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=284</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -12001,25 +11995,25 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11993</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=276</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11994</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=146</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11995</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=273</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11996</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=279</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -12031,67 +12025,67 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11998</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=302</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=11999</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=292</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12000</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=7</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12001</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=297</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12002</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=307</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12003</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=298</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12004</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=295</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12005</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=305</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12006</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=300</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12007</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=222</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12008</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=299</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -12121,31 +12115,31 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12013</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=290</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12014</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=287</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12015</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=281</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12016</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=309</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12017</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=285</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -12187,7 +12181,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12024</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=322</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -12211,7 +12205,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12028</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=322</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -12223,7 +12217,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12030</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=374</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -12241,7 +12235,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgbnews.kr/report_view.html?newsuid=12033</loc>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=371</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -12320,6 +12314,12 @@
   </url>
   <url>
     <loc>https://kgbnews.kr/report_view.html?newsuid=12046</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kgbnews.kr/report_view.html?newsuid=12047</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
