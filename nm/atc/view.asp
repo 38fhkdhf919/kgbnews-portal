@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
     <style>
         body { font-family: 'Noto Sans KR', sans-serif; background-color: #f8fafc; color: #1e293b; }
         .serif-title { font-family: 'Noto Serif KR', serif; }
@@ -19,7 +19,7 @@
     <!-- Header -->
     <header class="bg-white border-b-2 border-slate-900 sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="../index.html" class="flex items-center gap-2.5">
+            <a href="../../index.html" class="flex items-center gap-2.5">
                 <div class="w-9 h-9 rounded bg-slate-900 flex items-center justify-center text-white font-black text-sm">KGB</div>
                 <div>
                     <span class="serif-title text-xl font-black tracking-tight text-slate-900">KGB<span class="text-indigo-600">NEWS</span></span>
@@ -27,8 +27,8 @@
                 </div>
             </a>
             <div class="flex items-center gap-3 text-xs font-bold">
-                <a href="../index.html" class="text-slate-600 hover:text-indigo-600 px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">홈으로</a>
-                <a href="../archive/index.html" class="text-indigo-600 bg-indigo-50 px-3.5 py-1.5 rounded-lg hover:bg-indigo-100 transition">전체기사 (1395)</a>
+                <a href="../../index.html" class="text-slate-600 hover:text-indigo-600 px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">홈으로</a>
+                <a href="../../archive/index.html" class="text-indigo-600 bg-indigo-50 px-3.5 py-1.5 rounded-lg hover:bg-indigo-100 transition">전체기사 (1395)</a>
             </div>
         </div>
     </header>
@@ -66,7 +66,7 @@
                         <p class="font-bold text-slate-700" id="art-signature">KGB NEWS 경기북부일보 취재팀</p>
                         <p class="text-[11px] text-slate-400">저작권자 © KGB NEWS 무단전재 및 재배포 금지</p>
                     </div>
-                    <a href="../archive/index.html" class="px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-700 font-bold hover:border-indigo-500 hover:text-indigo-600 transition">
+                    <a href="../../archive/index.html" class="px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-700 font-bold hover:border-indigo-500 hover:text-indigo-600 transition">
                         목록으로
                     </a>
                 </div>
@@ -93,12 +93,12 @@
                         <span>분야별 뉴스 모아보기</span>
                     </h3>
                     <div class="grid grid-cols-2 gap-2 text-xs font-bold">
-                        <a href="../archive/index.html" class="p-2.5 rounded-xl bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-100 transition">🏛️ 정치·행정</a>
-                        <a href="../archive/index.html" class="p-2.5 rounded-xl bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-100 transition">📈 경제·산업</a>
-                        <a href="../archive/index.html" class="p-2.5 rounded-xl bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-100 transition">🚨 사회·안전</a>
-                        <a href="../archive/index.html" class="p-2.5 rounded-xl bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-100 transition">🎭 문화·체육</a>
-                        <a href="../archive/index.html" class="p-2.5 rounded-xl bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-100 transition">🌱 교육·환경</a>
-                        <a href="../archive/index.html" class="p-2.5 rounded-xl bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-100 transition">🗺️ 전 시·군 종합</a>
+                        <a href="../../archive/index.html" class="p-2.5 rounded-xl bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-100 transition">🏛️ 정치·행정</a>
+                        <a href="../../archive/index.html" class="p-2.5 rounded-xl bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-100 transition">📈 경제·산업</a>
+                        <a href="../../archive/index.html" class="p-2.5 rounded-xl bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-100 transition">🚨 사회·안전</a>
+                        <a href="../../archive/index.html" class="p-2.5 rounded-xl bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-100 transition">🎭 문화·체육</a>
+                        <a href="../../archive/index.html" class="p-2.5 rounded-xl bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-100 transition">🌱 교육·환경</a>
+                        <a href="../../archive/index.html" class="p-2.5 rounded-xl bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-100 transition">🗺️ 전 시·군 종합</a>
                     </div>
                 </div>
 
@@ -124,13 +124,13 @@
                     <span>경기북부 대표 정론지 케이지비 뉴스</span>
                 </div>
                 <div class="flex items-center gap-4 text-xs">
-                    <a href="../agreement.html" class="hover:text-white transition">회사소개</a>
+                    <a href="../../agreement.html" class="hover:text-white transition">회사소개</a>
                     <span class="text-slate-700">·</span>
-                    <a href="../agreement.html" class="hover:text-white transition">이용약관</a>
+                    <a href="../../agreement.html" class="hover:text-white transition">이용약관</a>
                     <span class="text-slate-700">·</span>
-                    <a href="../agreement2.html" class="hover:text-white transition">개인정보처리방침</a>
+                    <a href="../../agreement2.html" class="hover:text-white transition">개인정보처리방침</a>
                     <span class="text-slate-700">·</span>
-                    <a href="../sub.html" class="hover:text-white transition">기사제보</a>
+                    <a href="../../sub.html" class="hover:text-white transition">기사제보</a>
                 </div>
             </div>
 
