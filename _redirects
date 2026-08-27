@@ -1,0 +1,7 @@
+# KGBNEWS Historical Path Rewrites (200 OK)
+/newnews/print.php* /newnews/print.html 200
+/nm/atc/view.asp* /report_view.html 200
+/nm/atc/section.asp* /sub.html 200
+/nm/atc/list.asp* /sub.html 200
+/nm/bbs/board.asp* /bbs.html 200
+/default.html* /default.html 200
