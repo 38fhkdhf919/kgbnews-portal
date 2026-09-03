@@ -192,9 +192,9 @@
             }
 
             if (art) {
-                document.title = `${art.title} - KGB NEWS`;
-                const pageDesc = document.getElementById('page-desc');
-                if (pageDesc) pageDesc.setAttribute('content', `${art.title} - KGB NEWS ${art.date} 정규 보도`);
+                window.location.replace('../news/' + art.id + '.html');
+                return;
+            }
 
                 document.getElementById('art-title').innerText = art.title;
                 document.getElementById('art-category').innerText = art.category;

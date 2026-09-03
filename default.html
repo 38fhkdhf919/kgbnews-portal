@@ -4,10 +4,21 @@
     <meta name="naver-site-verification" content="a95c2b755b9b91f11920176152d986aa26d76419" />
     <meta charset="UTF-8">
     <title>KGB NEWS 기사 연결 중...</title>
+    <script src="./legacy_map.js"></script>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
-        const id = urlParams.get('idx') || urlParams.get('uid') || urlParams.get('etc_uid') || urlParams.get('newsuid') || '1';
-        window.location.replace('./news/' + id + '.html');
+        const idParam = urlParams.get('id');
+        const rawUid = urlParams.get('newsuid') || urlParams.get('uid') || urlParams.get('etc_uid') || urlParams.get('idx') || urlParams.get('bbs_uid') || urlParams.get('P_Index') || urlParams.get('P_INDEX');
+        
+        let targetId = '1';
+        if (idParam && Number(idParam) >= 1 && Number(idParam) <= 1395) {
+            targetId = idParam;
+        } else if (rawUid && window._KGB_UID_MAP && window._KGB_UID_MAP[rawUid]) {
+            targetId = window._KGB_UID_MAP[rawUid];
+        } else if (rawUid && Number(rawUid) >= 1 && Number(rawUid) <= 1395) {
+            targetId = rawUid;
+        }
+        window.location.replace('./news/' + targetId + '.html');
     </script>
 </head>
 <body>
