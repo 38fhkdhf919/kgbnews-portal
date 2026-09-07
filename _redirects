@@ -1,10 +1,55 @@
-# KGBNEWS 200 OK Rewrites & 301 Permanent Redirects
-/archive/history_* /archive/index.html 301
+# ========================================================
+# KGBNEWS.KR Canonical & 404 Elimination Rules
+# ========================================================
+
+# 1. Force Canonical Host & Protocol
+http://www.kgbnews.kr/* https://kgbnews.kr/:splat 301
+https://www.kgbnews.kr/* https://kgbnews.kr/:splat 301
+http://kgbnews.kr/* https://kgbnews.kr/:splat 301
+
+# 2. Legacy Archives & Index Direct 301 (Eliminate 2-hop chains)
+/archive/history_* /archive/ 301
+/archive/index.html /archive/ 301
 /index.php* / 301
+/index.html / 301
+
+# 3. Legacy Web Archive 33 Endpoints Elimination (Zero 404 Guarantee)
+/search.html* /archive/ 301
+/newsletter.html* / 301
+/notice_popup.html* / 301
+/last_poll.html* / 301
+
+# Company & Terms
+/company/* /agreement.html 301
+
+# Old Dynamic Endpoints (newnews)
 /newnews/print.php* /newnews/print.html 200
+/newnews/formmail* / 301
+/newnews/newsmail* / 301
+/newnews/report_add* / 301
+/newnews/ins_* / 301
+/newnews/name_check* / 301
+/newnews/new_member* / 301
+/newnews/plogin* / 301
+
+# Old BBS Endpoints
+/bbs/bbs_etc* /bbs.html 301
+/bbs/gdbbs* /bbs.html 301
+/bbs/ins_bbs* /bbs.html 301
+
+# Old ASP Endpoints (nm)
 /nm/atc/view.asp* /report_view.html 200
 /nm/atc/section.asp* /sub.html 200
 /nm/atc/list.asp* /sub.html 200
+/nm/atc/class.asp* /sub.html 200
+/nm/atc/type.asp* /sub.html 200
 /nm/bbs/board.asp* /bbs.html 200
+/nm/mem/* /agreement.html 301
+
+# Ad Link & Skins
 /ad_link.php* /report_view.html 200
 /default.html* /default.html 200
+/news/journalist/* /archive/ 301
+/news_skin/* / 301
+/data/* / 301
+/imgdata/* / 301
