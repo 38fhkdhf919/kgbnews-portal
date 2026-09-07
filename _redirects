@@ -1,4 +1,6 @@
-# KGBNEWS 200 OK Rewrites
+# KGBNEWS 200 OK Rewrites & 301 Permanent Redirects
+/archive/history_* /archive/index.html 301
+/index.php* / 301
 /newnews/print.php* /newnews/print.html 200
 /nm/atc/view.asp* /report_view.html 200
 /nm/atc/section.asp* /sub.html 200
