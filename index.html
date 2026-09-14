@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://kgbnews.kr/">
     <link rel="alternate" type="application/rss+xml" title="KGB NEWS RSS 피드" href="/rss.xml" />
 
-    <!-- Open Graph (네이버 & 구글 소셜 검색 최적화) -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="KGB NEWS (케이지비뉴스)">
     <meta property="og:title" content="KGB NEWS - 18년 전통 경기북부 정론 종합 언론 포털">
@@ -20,7 +20,7 @@
     <meta property="og:url" content="https://kgbnews.kr/">
     <meta property="og:image" content="https://kgbnews.kr/apple-touch-icon.png">
 
-    <!-- Schema.org NewsMediaOrganization & WebSite JSON-LD -->
+    <!-- Schema.org NewsMediaOrganization -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -49,14 +49,11 @@
             font-family: 'Noto Serif KR', serif;
         }
         .news-card {
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
             transition: all 0.2s ease-in-out;
         }
         .news-card:hover {
             transform: translateY(-2px);
-            box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.08);
-            border-color: #cbd5e1;
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.08);
         }
         .ticker-wrap {
             overflow: hidden;
@@ -70,21 +67,13 @@
             0% { transform: translate3d(0, 0, 0); }
             100% { transform: translate3d(-50%, 0, 0); }
         }
-        @media (max-width: 768px) {
-            #mobile-nav.active {
-                display: block !important;
-            }
-        }
     </style>
-    <!-- 데이터 번들 로드 -->
-    <script src="./articles_data.js"></script>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-    <link rel="alternate icon" type="image/x-icon" href="./favicon.ico">
 </head>
 
 <body class="min-h-screen flex flex-col justify-between">
 
-    <!-- 1. 최상단 롤링 속보 바 & Utility Header -->
+    <!-- 1. 최상단 롤링 속보 바 -->
     <div class="bg-slate-950 text-slate-300 text-xs border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex items-center gap-3 w-full sm:w-auto overflow-hidden">
@@ -104,7 +93,7 @@
                 <span><i class="far fa-calendar-alt mr-1"></i>2008-2026 아카이브</span>
                 <span>•</span>
                 <a href="/archive/" class="hover:text-amber-400 transition-colors font-bold">
-                    <i class="fas fa-archive mr-1"></i>전체기사 아카이브
+                    <i class="fas fa-archive mr-1"></i>전체기사 아카이브 (1,395건)
                 </a>
             </div>
         </div>
@@ -113,7 +102,6 @@
     <!-- 2. 메인 언론사 로고 헤더 -->
     <header class="bg-white border-b border-slate-200 py-6">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-            
             <div class="flex items-center gap-4">
                 <a href="/" class="flex items-center gap-3 group">
                     <div class="w-12 h-12 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center font-black text-2xl shadow-lg border border-slate-700 group-hover:scale-105 transition-transform">
@@ -135,32 +123,26 @@
                 </a>
             </div>
 
-            <!-- 증시 & 환율 지수 실시간 바 -->
             <div class="hidden lg:flex items-center gap-4 bg-slate-50 p-3 rounded-2xl border border-slate-200 text-xs">
                 <div class="flex items-center gap-2 px-3 border-r border-slate-200">
-                    <span class="text-slate-500 font-bold">코스피</span>
-                    <span class="font-black text-slate-900">2,754.20</span>
-                    <span class="text-red-500 font-bold text-[11px]"><i class="fas fa-caret-up"></i> +14.50</span>
+                    <span class="text-slate-500 font-bold">등록 기사</span>
+                    <span class="font-black text-indigo-600">1,395건</span>
                 </div>
                 <div class="flex items-center gap-2 px-3 border-r border-slate-200">
-                    <span class="text-slate-500 font-bold">코스닥</span>
-                    <span class="font-black text-slate-900">865.10</span>
-                    <span class="text-red-500 font-bold text-[11px]"><i class="fas fa-caret-up"></i> +3.20</span>
+                    <span class="text-slate-500 font-bold">보도 권역</span>
+                    <span class="font-black text-slate-900">경기북부 10개 시·군</span>
                 </div>
                 <div class="flex items-center gap-2 px-3">
-                    <span class="text-slate-500 font-bold">USD/KRW</span>
-                    <span class="font-black text-slate-900">1,335.50</span>
-                    <span class="text-blue-500 font-bold text-[11px]"><i class="fas fa-caret-down"></i> -2.10</span>
+                    <span class="text-slate-500 font-bold">아카이브</span>
+                    <span class="font-black text-emerald-600">28개 페이징 분할</span>
                 </div>
             </div>
-
         </div>
     </header>
 
     <!-- 3. 메인 네비게이션 가로 바 -->
     <nav class="bg-slate-900 sticky top-0 z-50 text-white border-b-2 border-indigo-600 shadow-md">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            
             <ul class="hidden md:flex items-center space-x-1 text-sm font-bold">
                 <li><a href="/" class="block px-4 py-3.5 bg-indigo-600 text-white font-black">홈</a></li>
                 <li><a href="/archive/" class="block px-4 py-3.5 hover:bg-slate-800 text-slate-200 hover:text-amber-400 transition-colors">정치·행정</a></li>
@@ -173,40 +155,31 @@
             <div class="flex items-center gap-3">
                 <a href="/archive/" class="bg-indigo-600 hover:bg-indigo-500 text-white px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 shadow">
                     <i class="fas fa-archive text-[10px]"></i>
-                    <span>전체기사 아카이브</span>
+                    <span>전체기사 아카이브 (28P)</span>
                 </a>
             </div>
         </div>
     </nav>
 
     <!-- 4. 메인 컨텐츠 영역 -->
-    <main class="max-w-7xl mx-auto px-4 py-8 flex-grow w-full space-y-10">
+    <main class="max-w-7xl mx-auto px-4 py-8 flex-grow w-full space-y-12">
         
         <!-- 탑 섹션: 메인 헤드라인 톱기사 + 서브 기사 Grid -->
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            
-            <!-- 좌측 8열: 정통 언론사 메인 헤드라인 기사 -->
             <div class="lg:col-span-8 space-y-6">
-                
                 <div class="bg-white p-6 md:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
                     <div class="flex items-center gap-2 text-xs font-bold">
                         <span class="bg-red-600 text-white px-2.5 py-0.5 rounded uppercase">주요 헤드라인</span>
                         <span class="text-slate-400">2008-03-10 | 의정부시 취재팀</span>
                     </div>
 
-                    <h1 class="serif-title text-2xl md:text-3xl lg:text-4xl font-black text-slate-950 leading-tight hover:text-indigo-900 transition-colors">
-                        <a href="/news/1">
-                            의정부시, 2008년도 자치혁신 및 도민 체감형 행정 서비스 강화 계획 발표
-                        </a>
+                    <h1 class="serif-title text-2xl md:text-3xl font-black text-slate-950 leading-tight hover:text-indigo-900 transition-colors">
+                        <a href="/news/1">의정부시, 2008년도 자치혁신 및 도민 체감형 행정 서비스 강화 계획 발표</a>
                     </h1>
 
                     <div class="p-4 bg-slate-50 border-l-4 border-slate-900 text-slate-700 text-sm md:text-base leading-relaxed font-medium">
-                        "<b>[의정부시 = 경기북부일보 김진우 기자]</b> 의정부시(시청)은 2008-03-10 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 '의정부시, 2008년도 자치혁신 및 도민 체감형 행정 서비스 강화 계획 발표' 계획을 확정하고 본격 시행에 나선다고 밝혔다."
+                        "[의정부시 = 경기북부일보 김진우 기자] 의정부시(시청)은 2008-03-10 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 '의정부시, 2008년도 자치혁신 및 도민 체감형 행정 서비스 강화 계획 발표' 계획을 확정하고 본격 시행에 나선다고 밝혔다...."
                     </div>
-
-                    <p class="text-slate-600 text-sm leading-relaxed font-sans">
-                        주민 중심의 신속한 민원 처리와 행정 사각지대 해소를 위한 원스톱 행정 지원 체계 구축을 골자로 하는 이번 시책은 의정부시 전역의 균형 발전과 현장 중심의 실효성 있는 지원 방안을 폭넓게 담고 있다. 주민 참여 예산제 확대와 찾아가는 현장 민원실 운영 등 실질적인 도민 권익 증진에 총력을 다할 방침이다. 특히 시청 관계자 및 현장 실무추진단이 참여하여 사업 추진 일정과 세부 예산 집행 계획을 면밀히 조율했다.
-                    </p>
 
                     <div class="pt-3 flex justify-between items-center text-xs text-slate-400 border-t border-slate-100 flex-wrap gap-2">
                         <span>취재기자: 김진우 기자 (정치행정부)</span>
@@ -218,190 +191,1094 @@
 
                 <!-- 2열 서브 기사 Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="news-card p-5 rounded-2xl space-y-2 flex flex-col justify-between">
-                        <div>
-                            <span class="text-[11px] font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded">경제·산업</span>
-                            <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-indigo-600 mt-2">
-                                <a href="/news/2">
-                                    양주시, 지역 중소기업 및 소상공인 경영안정자금 23억원 긴급 지원
-                                </a>
-                            </h3>
-                            <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-2">
-                                <b>[양주시 = 경기북부일보 박성현 기자]</b> 양주시(시의회)는 2008-03-10 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 '양주시, 지역 중소기업 및 소상공인 경영안정자금 23억원 긴급 지원' 계획을 확정하고 본격 시행에 나선다고 밝혔다.
-                            </p>
+
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-blue-50 text-blue-700 px-2 py-0.5 rounded">경제·산업</span>
+                            <span class="text-slate-500 font-bold text-[11px]">양주시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2008-03-10</span>
                         </div>
-                        <div class="text-[11px] text-slate-400 pt-3 border-t border-slate-100 flex justify-between">
-                            <span>2008-03-10</span>
-                            <span class="font-bold text-indigo-600">양주시</span>
-                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/2">양주시, 지역 중소기업 및 소상공인 경영안정자금 23억원 긴급 지원</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[양주시 = 경기북부일보 박성현 기자] 양주시(시의회)는 2008-03-10 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;양주시, 지역 중소기업 및 소상공인 경영안정자금 23억원 긴급 ...</p>
                     </div>
-
-                    <div class="news-card p-5 rounded-2xl space-y-2 flex flex-col justify-between">
-                        <div>
-                            <span class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">사회·안전</span>
-                            <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-indigo-600 mt-2">
-                                <a href="/news/3">
-                                    동두천시, 범죄 취약지구 안심 귀갓길 조성 및 스마트 CCTV 관제망 대폭 확충
-                                </a>
-                            </h3>
-                            <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-2">
-                                <b>[동두천시 = 경기북부일보 이형오 기자]</b> 동두천시(보건소)는 2008-03-10 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 '동두천시, 범죄 취약지구 안심 귀갓길 조성 및 스마트 CCTV 관제망 대폭 확충' 계획을 확정하고 본격 시행에 나선다고 밝혔다.
-                            </p>
-                        </div>
-                        <div class="text-[11px] text-slate-400 pt-3 border-t border-slate-100 flex justify-between">
-                            <span>2008-03-10</span>
-                            <span class="font-bold text-emerald-600">동두천시</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- 우측 4열: 실시간 많이 본 기사 & 언론사 보증 위젯 (순수 언론사 형태) -->
-            <div class="lg:col-span-4 space-y-6">
-                
-                <!-- 언론사 공정보도 사령탑 위젯 -->
-                <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-6 rounded-2xl shadow-sm space-y-3">
-                    <div class="flex items-center justify-between border-b border-slate-700 pb-2.5">
-                        <span class="bg-indigo-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded">
-                            정론직필 아카이브
-                        </span>
-                        <span class="text-slate-400 text-[11px]">KGB NEWS</span>
-                    </div>
-
-                    <h4 class="serif-title font-bold text-white text-base leading-snug">
-                        경기북부 10개 시·군 지역 밀착 행정·민생 종합 보도
-                    </h4>
-
-                    <p class="text-xs text-slate-300 leading-relaxed">
-                        경기북부 10개 시·군의 역사와 함께해 온 심층 보도 기사를 통해 지역 사회 발전과 도민의 알 권리를 지키고 있습니다.
-                    </p>
-
-                    <div class="pt-1">
-                        <a href="/archive/" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-400 hover:text-amber-300 transition-colors">
-                            <span>전체기사 아카이브 둘러보기</span>
-                            <i class="fas fa-arrow-right text-[10px]"></i>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>박성현 (경제산업부)</span>
+                        <a href="/news/2" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
                         </a>
                     </div>
                 </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded">사회·안전</span>
+                            <span class="text-slate-500 font-bold text-[11px]">동두천시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2008-03-10</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/3">동두천시, 범죄 취약지구 안심 귀갓길 조성 및 스마트 CCTV 관제망 대폭 확충</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[동두천시 = 경기북부일보 이형오 기자] 동두천시(보건소)는 2008-03-10 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;동두천시, 범죄 취약지구 안심 귀갓길 조성 및 스마트 CCT...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>이형오 (사회이슈부)</span>
+                        <a href="/news/3" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
 
-                <!-- 실시간 주요 보도 TOP 5 -->
+            <!-- 우측 4열: 실시간 주요 보도 TOP 5 -->
+            <div class="lg:col-span-4 space-y-6">
                 <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-4">
                     <h3 class="font-black text-slate-900 text-base flex items-center gap-2 border-b border-slate-100 pb-3">
                         <i class="fas fa-fire text-red-500"></i> 실시간 주요 보도 TOP 5
                     </h3>
-
                     <ol class="space-y-3 text-xs">
-                        <li class="flex items-start gap-3">
-                            <span class="font-black text-red-600 text-sm">1</span>
+
+                        <li class="flex items-start gap-3 pb-3 border-b border-slate-100 last:border-0 last:pb-0">
+                            <span class="font-black text-red-600 text-sm sm:text-base shrink-0">1</span>
                             <div>
-                                <a href="/news/4" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                <a href="/news/4" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-snug">
                                     포천시, 도민과 함께하는 2008 숲속 힐링 문화축제 성황리 개막
                                 </a>
-                                <span class="text-[10px] text-slate-400 mt-0.5 block">포천시 · 문화·체육</span>
+                                <span class="text-[10px] text-slate-400 mt-1 block">포천시 · 문화·체육 · 2008-03-10</span>
                             </div>
                         </li>
-                        <li class="flex items-start gap-3">
-                            <span class="font-black text-red-500 text-sm">2</span>
+                        <li class="flex items-start gap-3 pb-3 border-b border-slate-100 last:border-0 last:pb-0">
+                            <span class="font-black text-red-500 text-sm sm:text-base shrink-0">2</span>
                             <div>
-                                <a href="/news/5" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                <a href="/news/5" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-snug">
                                     연천군, 미래 인재 육성 위한 청소년 장학기금 17억원 수여식 개최
                                 </a>
-                                <span class="text-[10px] text-slate-400 mt-0.5 block">연천군 · 교육·환경</span>
+                                <span class="text-[10px] text-slate-400 mt-1 block">연천군 · 교육·환경 · 2008-03-10</span>
                             </div>
                         </li>
-                        <li class="flex items-start gap-3">
-                            <span class="font-black text-amber-500 text-sm">3</span>
+                        <li class="flex items-start gap-3 pb-3 border-b border-slate-100 last:border-0 last:pb-0">
+                            <span class="font-black text-amber-500 text-sm sm:text-base shrink-0">3</span>
                             <div>
-                                <a href="/news/6" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                <a href="/news/6" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-snug">
                                     파주시, 지방의회 정례회 개회... 민생 조례안 및 주요 추경안 심의 착수
                                 </a>
-                                <span class="text-[10px] text-slate-400 mt-0.5 block">파주시 · 정치·행정</span>
+                                <span class="text-[10px] text-slate-400 mt-1 block">파주시 · 정치·행정 · 2008-03-28</span>
                             </div>
                         </li>
-                        <li class="flex items-start gap-3">
-                            <span class="font-black text-slate-400 text-sm">4</span>
+                        <li class="flex items-start gap-3 pb-3 border-b border-slate-100 last:border-0 last:pb-0">
+                            <span class="font-black text-slate-600 text-sm sm:text-base shrink-0">4</span>
                             <div>
-                                <a href="/news/7" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                <a href="/news/7" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-snug">
                                     고양시, 전통시장 현대화 사업 및 온누리상품권 이용 활성화 캠페인 전개
                                 </a>
-                                <span class="text-[10px] text-slate-400 mt-0.5 block">고양시 · 경제·산업</span>
+                                <span class="text-[10px] text-slate-400 mt-1 block">고양시 · 경제·산업 · 2008-03-28</span>
                             </div>
                         </li>
-                        <li class="flex items-start gap-3">
-                            <span class="font-black text-slate-400 text-sm">5</span>
+                        <li class="flex items-start gap-3 pb-3 border-b border-slate-100 last:border-0 last:pb-0">
+                            <span class="font-black text-slate-500 text-sm sm:text-base shrink-0">5</span>
                             <div>
-                                <a href="/news/8" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-relaxed">
+                                <a href="/news/8" class="font-bold text-slate-900 hover:text-indigo-600 line-clamp-2 leading-snug">
                                     가평군, 여름철 풍수해 대비 재난안전대책본부 가동... 취약 시설 전수 점검
                                 </a>
-                                <span class="text-[10px] text-slate-400 mt-0.5 block">가평군 · 사회·안전</span>
+                                <span class="text-[10px] text-slate-400 mt-1 block">가평군 · 사회·안전 · 2008-08-11</span>
                             </div>
                         </li>
                     </ol>
                 </div>
 
+                <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-6 rounded-2xl shadow-sm space-y-3">
+                    <div class="flex items-center justify-between border-b border-slate-700 pb-2">
+                        <span class="bg-indigo-600 text-white text-[11px] font-bold px-2 py-0.5 rounded">아카이브 바로가기</span>
+                        <span class="text-slate-400 text-[11px]">총 1,395건</span>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        28개 페이징으로 분할된 전체 기사 아카이브를 통해 경기북부 10개 시·군의 역사와 심층 기사를 자유롭게 탐색하세요.
+                    </p>
+                    <div class="flex flex-wrap gap-1 pt-2">
+<a href="/archive/" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">1P</a><a href="/archive/page/2.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">2P</a><a href="/archive/page/3.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">3P</a><a href="/archive/page/4.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">4P</a><a href="/archive/page/5.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">5P</a><a href="/archive/page/6.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">6P</a><a href="/archive/page/7.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">7P</a><a href="/archive/page/8.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">8P</a><a href="/archive/page/9.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">9P</a><a href="/archive/page/10.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">10P</a><a href="/archive/page/11.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">11P</a><a href="/archive/page/12.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">12P</a><a href="/archive/page/13.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">13P</a><a href="/archive/page/14.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">14P</a><a href="/archive/page/15.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">15P</a><a href="/archive/page/16.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">16P</a><a href="/archive/page/17.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">17P</a><a href="/archive/page/18.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">18P</a><a href="/archive/page/19.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">19P</a><a href="/archive/page/20.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">20P</a><a href="/archive/page/21.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">21P</a><a href="/archive/page/22.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">22P</a><a href="/archive/page/23.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">23P</a><a href="/archive/page/24.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">24P</a><a href="/archive/page/25.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">25P</a><a href="/archive/page/26.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">26P</a><a href="/archive/page/27.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">27P</a><a href="/archive/page/28.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">28P</a>
+                    </div>
+                </div>
             </div>
-
         </section>
 
-        <!-- 카테고리별 주요 뉴스 섹션 -->
-        <section class="space-y-6 pt-6 border-t border-slate-200">
+        <!-- 섹션 2: 정치·행정 보도 (5건) -->
+        <section class="space-y-4 pt-4 border-t border-slate-200">
             <div class="flex justify-between items-end border-b-2 border-slate-900 pb-2">
-                <h2 class="serif-title font-black text-xl md:text-2xl text-slate-900 flex items-center gap-2">
-                    <i class="fas fa-newspaper text-indigo-600"></i> 분야별 주요 보도 뉴스
+                <h2 class="serif-title font-black text-xl text-slate-900 flex items-center gap-2">
+                    <i class="fas fa-landmark text-indigo-600"></i> 정치·행정 주요 보도
                 </h2>
-                <a href="/archive/" class="text-xs font-bold text-indigo-600 hover:text-indigo-800">분야별 기사 전체보기 ➔</a>
+                <a href="/archive/" class="text-xs font-bold text-indigo-600 hover:underline">정치행정 기사 더보기 ➔</a>
             </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="news-card p-5 rounded-2xl space-y-3 flex flex-col justify-between">
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
                     <div>
-                        <span class="text-[10px] font-bold bg-slate-100 text-indigo-700 px-2 py-0.5 rounded">문화·체육</span>
-                        <h3 class="font-bold text-slate-900 text-sm leading-snug mt-2">
-                            <a href="/news/9" class="hover:text-indigo-600">
-                                남양주시, 생활체육 활성화 위한 권역별 다목적 체육관 및 풋살경기장 준공
-                            </a>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-purple-50 text-purple-700 px-2 py-0.5 rounded">문화·체육</span>
+                            <span class="text-slate-500 font-bold text-[11px]">남양주시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2008-08-11</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/9">남양주시, 생활체육 활성화 위한 권역별 다목적 체육관 및 풋살경기장 준공</a>
                         </h3>
-                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-2">
-                            <b>[남양주시 = 경기북부일보 김진우 기자]</b> 남양주시(도시공사)는 2008-08-11 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 '남양주시, 생활체육 활성화 위한 권역별 다목적 체육관 및 풋살경기장 준공' 계획을 확정하고 본격 시행에 나선다고 밝혔다.
-                        </p>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[남양주시 = 경기북부일보 김진우 기자] 남양주시(도시공사)는 2008-08-11 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;남양주시, 생활체육 활성화 위한 권역별 다목적 체육관 및 ...</p>
                     </div>
-                    <div class="pt-2 text-right border-t border-slate-100">
-                        <a href="/news/9" class="text-[11px] font-bold text-indigo-600 hover:underline">기사 읽기 ➔</a>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>김진우 (문화체육부)</span>
+                        <a href="/news/9" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
                     </div>
                 </div>
-
-                <div class="news-card p-5 rounded-2xl space-y-3 flex flex-col justify-between">
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
                     <div>
-                        <span class="text-[10px] font-bold bg-slate-100 text-indigo-700 px-2 py-0.5 rounded">교육·환경</span>
-                        <h3 class="font-bold text-slate-900 text-sm leading-snug mt-2">
-                            <a href="/news/10" class="hover:text-indigo-600">
-                                구리시, 맑고 푸른 도심 가꾸기... 탄소중립 도시숲 및 하천 생태공원 조성 완료
-                            </a>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-purple-50 text-purple-700 px-2 py-0.5 rounded">교육·환경</span>
+                            <span class="text-slate-500 font-bold text-[11px]">구리시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-08</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/10">구리시, 맑고 푸른 도심 가꾸기... 탄소중립 도시숲 및 하천 생태공원 조성 완료</a>
                         </h3>
-                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-2">
-                            <b>[구리시 = 경기북부일보 박성현 기자]</b> 구리시(청소년수련관)은 2010-10-08 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 '구리시, 맑고 푸른 도심 가꾸기... 탄소중립 도시숲 및 하천 생태공원 조성 완료' 계획을 확정하고 본격 시행에 나선다고 밝혔다.
-                        </p>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[구리시 = 경기북부일보 박성현 기자] 구리시(청소년수련관)은 2010-10-08 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;구리시, 맑고 푸른 도심 가꾸기... 탄소중립 도시숲 및 ...</p>
                     </div>
-                    <div class="pt-2 text-right border-t border-slate-100">
-                        <a href="/news/10" class="text-[11px] font-bold text-indigo-600 hover:underline">기사 읽기 ➔</a>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>박성현 (교육환경부)</span>
+                        <a href="/news/10" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
                     </div>
                 </div>
-
-                <div class="news-card p-5 rounded-2xl space-y-3 flex flex-col justify-between">
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
                     <div>
-                        <span class="text-[10px] font-bold bg-slate-100 text-indigo-700 px-2 py-0.5 rounded">정치·행정</span>
-                        <h3 class="font-bold text-slate-900 text-sm leading-snug mt-2">
-                            <a href="/news/11" class="hover:text-indigo-600">
-                                의정부시, 공직사회 청렴도 향상 및 투명 행정 실천 결의대회 개최
-                            </a>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-purple-50 text-purple-700 px-2 py-0.5 rounded">정치·행정</span>
+                            <span class="text-slate-500 font-bold text-[11px]">의정부시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-08</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/11">의정부시, 공직사회 청렴도 향상 및 투명 행정 실천 결의대회 개최</a>
                         </h3>
-                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-2">
-                            <b>[의정부시 = 경기북부일보 이형오 기자]</b> 의정부시(교육지원청)은 2010-10-08 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 '의정부시, 공직사회 청렴도 향상 및 투명 행정 실천 결의대회 개최' 계획을 확정하고 본격 시행에 나선다고 밝혔다.
-                        </p>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[의정부시 = 경기북부일보 이형오 기자] 의정부시(교육지원청)은 2010-10-08 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;의정부시, 공직사회 청렴도 향상 및 투명 행정 실천 결의...</p>
                     </div>
-                    <div class="pt-2 text-right border-t border-slate-100">
-                        <a href="/news/11" class="text-[11px] font-bold text-indigo-600 hover:underline">기사 읽기 ➔</a>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>이형오 (정치행정부)</span>
+                        <a href="/news/11" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-purple-50 text-purple-700 px-2 py-0.5 rounded">경제·산업</span>
+                            <span class="text-slate-500 font-bold text-[11px]">양주시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-08</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/12">양주시, 첨단 미래산업 클러스터 유치 및 친환경 신산업 육성 포럼 개최</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[양주시 = 경기북부일보 정민재 기자] 양주시(문화원)은 2010-10-08 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;양주시, 첨단 미래산업 클러스터 유치 및 친환경 신산업 육성 포...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>정민재 (경제산업부)</span>
+                        <a href="/news/12" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-purple-50 text-purple-700 px-2 py-0.5 rounded">사회·안전</span>
+                            <span class="text-slate-500 font-bold text-[11px]">동두천시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/13">동두천시, 복지 사각지대 발굴 위한 명예사회복지공무원 위촉 및 현장 방문단 출범</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[동두천시 = 경기북부일보 최승호 기자] 동두천시(시청)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;동두천시, 복지 사각지대 발굴 위한 명예사회복지공무원 위촉 및...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>최승호 (사회이슈부)</span>
+                        <a href="/news/13" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션 3: 경제·산업 보도 (5건) -->
+        <section class="space-y-4 pt-4 border-t border-slate-200">
+            <div class="flex justify-between items-end border-b-2 border-slate-900 pb-2">
+                <h2 class="serif-title font-black text-xl text-slate-900 flex items-center gap-2">
+                    <i class="fas fa-chart-line text-blue-600"></i> 경제·산업 주요 보도
+                </h2>
+                <a href="/archive/" class="text-xs font-bold text-blue-600 hover:underline">경제산업 기사 더보기 ➔</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded">문화·체육</span>
+                            <span class="text-slate-500 font-bold text-[11px]">포천시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/14">포천시, 도민과 함께하는 2008 숲속 힐링 문화축제 성황리 개막 (시의회 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[포천시 = 경기북부일보 강태수 기자] 포천시(시의회)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;포천시, 도민과 함께하는 2008 숲속 힐링 문화축제 성황리 개...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>강태수 (문화체육부)</span>
+                        <a href="/news/14" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded">교육·환경</span>
+                            <span class="text-slate-500 font-bold text-[11px]">연천군</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/15">연천군, 미래 인재 육성 위한 청소년 장학기금 12억원 수여식 개최</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[연천군 = 경기북부일보 윤도현 기자] 연천군(보건의료원)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;연천군, 미래 인재 육성 위한 청소년 장학기금 12억원 수여...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>윤도현 (교육환경부)</span>
+                        <a href="/news/15" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded">정치·행정</span>
+                            <span class="text-slate-500 font-bold text-[11px]">파주시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/16">파주시, 2008년도 자치혁신 및 도민 체감형 행정 서비스 강화 계획 발표</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[파주시 = 경기북부일보 한지민 기자] 파주시(산업단지관리공단)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;파주시, 2008년도 자치혁신 및 도민 체감형 행정 서...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>한지민 (정치행정부)</span>
+                        <a href="/news/16" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded">경제·산업</span>
+                            <span class="text-slate-500 font-bold text-[11px]">고양시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/17">고양시, 지역 중소기업 및 소상공인 경영안정자금 38억원 긴급 지원</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[고양시 = 경기북부일보 김진우 기자] 고양시(환경에너지시설)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;고양시, 지역 중소기업 및 소상공인 경영안정자금 38억원...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>김진우 (경제산업부)</span>
+                        <a href="/news/17" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded">사회·안전</span>
+                            <span class="text-slate-500 font-bold text-[11px]">가평군</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/18">가평군, 범죄 취약지구 안심 귀갓길 조성 및 스마트 CCTV 관제망 대폭 확충</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[가평군 = 경기북부일보 박성현 기자] 가평군(체육회)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;가평군, 범죄 취약지구 안심 귀갓길 조성 및 스마트 CCTV 관...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>박성현 (사회이슈부)</span>
+                        <a href="/news/18" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션 4: 사회·안전 보도 (5건) -->
+        <section class="space-y-4 pt-4 border-t border-slate-200">
+            <div class="flex justify-between items-end border-b-2 border-slate-900 pb-2">
+                <h2 class="serif-title font-black text-xl text-slate-900 flex items-center gap-2">
+                    <i class="fas fa-shield-alt text-emerald-600"></i> 사회·안전 주요 보도
+                </h2>
+                <a href="/archive/" class="text-xs font-bold text-emerald-600 hover:underline">사회안전 기사 더보기 ➔</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded">문화·체육</span>
+                            <span class="text-slate-500 font-bold text-[11px]">남양주시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/19">남양주시, 생활체육 활성화 위한 권역별 다목적 체육관 및 풋살경기장 준공 (시청 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[남양주시 = 경기북부일보 이형오 기자] 남양주시(시청)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;남양주시, 생활체육 활성화 위한 권역별 다목적 체육관 및 풋살...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>이형오 (문화체육부)</span>
+                        <a href="/news/19" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded">교육·환경</span>
+                            <span class="text-slate-500 font-bold text-[11px]">구리시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/20">구리시, 맑고 푸른 도심 가꾸기... 탄소중립 도시숲 및 하천 생태공원 조성 완료 (시의회 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[구리시 = 경기북부일보 정민재 기자] 구리시(시의회)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;구리시, 맑고 푸른 도심 가꾸기... 탄소중립 도시숲 및 하천 ...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>정민재 (교육환경부)</span>
+                        <a href="/news/20" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded">정치·행정</span>
+                            <span class="text-slate-500 font-bold text-[11px]">의정부시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/21">의정부시, 지방의회 정례회 개회... 민생 조례안 및 주요 추경안 심의 착수</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[의정부시 = 경기북부일보 최승호 기자] 의정부시(소방서)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;의정부시, 지방의회 정례회 개회... 민생 조례안 및 주요 ...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>최승호 (정치행정부)</span>
+                        <a href="/news/21" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded">경제·산업</span>
+                            <span class="text-slate-500 font-bold text-[11px]">양주시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/22">양주시, 전통시장 현대화 사업 및 온누리상품권 이용 활성화 캠페인 전개</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[양주시 = 경기북부일보 강태수 기자] 양주시(자원회수시설)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;양주시, 전통시장 현대화 사업 및 온누리상품권 이용 활성화...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>강태수 (경제산업부)</span>
+                        <a href="/news/22" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded">사회·안전</span>
+                            <span class="text-slate-500 font-bold text-[11px]">동두천시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/23">동두천시, 여름철 풍수해 대비 재난안전대책본부 가동... 취약 시설 전수 점검</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[동두천시 = 경기북부일보 윤도현 기자] 동두천시(자원봉사센터)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;동두천시, 여름철 풍수해 대비 재난안전대책본부 가동.....</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>윤도현 (사회이슈부)</span>
+                        <a href="/news/23" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션 5: 문화·체육 보도 (5건) -->
+        <section class="space-y-4 pt-4 border-t border-slate-200">
+            <div class="flex justify-between items-end border-b-2 border-slate-900 pb-2">
+                <h2 class="serif-title font-black text-xl text-slate-900 flex items-center gap-2">
+                    <i class="fas fa-palette text-rose-600"></i> 문화·체육 주요 보도
+                </h2>
+                <a href="/archive/" class="text-xs font-bold text-rose-600 hover:underline">문화체육 기사 더보기 ➔</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-rose-50 text-rose-700 px-2 py-0.5 rounded">문화·체육</span>
+                            <span class="text-slate-500 font-bold text-[11px]">포천시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/24">포천시, 도민과 함께하는 2008 숲속 힐링 문화축제 성황리 개막 (상공회의소 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[포천시 = 경기북부일보 한지민 기자] 포천시(상공회의소)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;포천시, 도민과 함께하는 2008 숲속 힐링 문화축제 성황리...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>한지민 (문화체육부)</span>
+                        <a href="/news/24" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-rose-50 text-rose-700 px-2 py-0.5 rounded">교육·환경</span>
+                            <span class="text-slate-500 font-bold text-[11px]">연천군</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/25">연천군, 미래 인재 육성 위한 청소년 장학기금 52억원 수여식 개최</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[연천군 = 경기북부일보 김진우 기자] 연천군(군청)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;연천군, 미래 인재 육성 위한 청소년 장학기금 52억원 수여식 개...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>김진우 (교육환경부)</span>
+                        <a href="/news/25" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-rose-50 text-rose-700 px-2 py-0.5 rounded">정치·행정</span>
+                            <span class="text-slate-500 font-bold text-[11px]">파주시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/26">파주시, 공직사회 청렴도 향상 및 투명 행정 실천 결의대회 개최</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[파주시 = 경기북부일보 박성현 기자] 파주시(시의회)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;파주시, 공직사회 청렴도 향상 및 투명 행정 실천 결의대회 개최...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>박성현 (정치행정부)</span>
+                        <a href="/news/26" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-rose-50 text-rose-700 px-2 py-0.5 rounded">경제·산업</span>
+                            <span class="text-slate-500 font-bold text-[11px]">고양시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/27">고양시, 첨단 미래산업 클러스터 유치 및 친환경 신산업 육성 포럼 개최</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[고양시 = 경기북부일보 이형오 기자] 고양시(킨텍스사업단)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;고양시, 첨단 미래산업 클러스터 유치 및 친환경 신산업 육...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>이형오 (경제산업부)</span>
+                        <a href="/news/27" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-rose-50 text-rose-700 px-2 py-0.5 rounded">사회·안전</span>
+                            <span class="text-slate-500 font-bold text-[11px]">가평군</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/28">가평군, 복지 사각지대 발굴 위한 명예사회복지공무원 위촉 및 현장 방문단 출범</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[가평군 = 경기북부일보 정민재 기자] 가평군(농촌체험마을)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;가평군, 복지 사각지대 발굴 위한 명예사회복지공무원 위촉 ...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>정민재 (사회이슈부)</span>
+                        <a href="/news/28" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션 6: 교육·환경 보도 (5건) -->
+        <section class="space-y-4 pt-4 border-t border-slate-200">
+            <div class="flex justify-between items-end border-b-2 border-slate-900 pb-2">
+                <h2 class="serif-title font-black text-xl text-slate-900 flex items-center gap-2">
+                    <i class="fas fa-seedling text-amber-600"></i> 교육·환경 주요 보도
+                </h2>
+                <a href="/archive/" class="text-xs font-bold text-amber-600 hover:underline">교육환경 기사 더보기 ➔</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-amber-50 text-amber-700 px-2 py-0.5 rounded">문화·체육</span>
+                            <span class="text-slate-500 font-bold text-[11px]">남양주시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/29">남양주시, 생활체육 활성화 위한 권역별 다목적 체육관 및 풋살경기장 준공 (평생교육원 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[남양주시 = 경기북부일보 최승호 기자] 남양주시(평생교육원)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;남양주시, 생활체육 활성화 위한 권역별 다목적 체육관 및...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>최승호 (문화체육부)</span>
+                        <a href="/news/29" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-amber-50 text-amber-700 px-2 py-0.5 rounded">교육·환경</span>
+                            <span class="text-slate-500 font-bold text-[11px]">구리시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/30">구리시, 맑고 푸른 도심 가꾸기... 탄소중립 도시숲 및 하천 생태공원 조성 완료 (문화원 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[구리시 = 경기북부일보 강태수 기자] 구리시(문화원)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;구리시, 맑고 푸른 도심 가꾸기... 탄소중립 도시숲 및 하천 ...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>강태수 (교육환경부)</span>
+                        <a href="/news/30" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-amber-50 text-amber-700 px-2 py-0.5 rounded">정치·행정</span>
+                            <span class="text-slate-500 font-bold text-[11px]">의정부시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/31">의정부시, 2008년도 자치혁신 및 도민 체감형 행정 서비스 강화 계획 발표 (시청 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[의정부시 = 경기북부일보 윤도현 기자] 의정부시(시청)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;의정부시, 2008년도 자치혁신 및 도민 체감형 행정 서비스 ...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>윤도현 (정치행정부)</span>
+                        <a href="/news/31" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-amber-50 text-amber-700 px-2 py-0.5 rounded">경제·산업</span>
+                            <span class="text-slate-500 font-bold text-[11px]">양주시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/32">양주시, 지역 중소기업 및 소상공인 경영안정자금 53억원 긴급 지원</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[양주시 = 경기북부일보 한지민 기자] 양주시(시의회)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;양주시, 지역 중소기업 및 소상공인 경영안정자금 53억원 긴급 ...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>한지민 (경제산업부)</span>
+                        <a href="/news/32" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-amber-50 text-amber-700 px-2 py-0.5 rounded">사회·안전</span>
+                            <span class="text-slate-500 font-bold text-[11px]">동두천시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/33">동두천시, 범죄 취약지구 안심 귀갓길 조성 및 스마트 CCTV 관제망 대폭 확충 (보건소 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[동두천시 = 경기북부일보 김진우 기자] 동두천시(보건소)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;동두천시, 범죄 취약지구 안심 귀갓길 조성 및 스마트 CCT...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>김진우 (사회이슈부)</span>
+                        <a href="/news/33" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션 7: 경기북부 10개 시·군 대표 심층 보도 (10건) -->
+        <section class="space-y-4 pt-4 border-t border-slate-200">
+            <div class="flex justify-between items-end border-b-2 border-slate-900 pb-2">
+                <h2 class="serif-title font-black text-xl text-slate-900 flex items-center gap-2">
+                    <i class="fas fa-map-marked-alt text-cyan-600"></i> 경기북부 10개 시·군 대표 보도
+                </h2>
+                <span class="text-xs text-slate-500 font-bold">의정부·고양·파주·양주·포천·동두천·연천·가평·남양주·구리</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-cyan-50 text-cyan-700 px-2 py-0.5 rounded">문화·체육</span>
+                            <span class="text-slate-500 font-bold text-[11px]">포천시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/34">포천시, 도민과 함께하는 2008 숲속 힐링 문화축제 성황리 개막 (한탄강사업소 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[포천시 = 경기북부일보 박성현 기자] 포천시(한탄강사업소)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;포천시, 도민과 함께하는 2008 숲속 힐링 문화축제 성황...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>박성현 (문화체육부)</span>
+                        <a href="/news/34" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-cyan-50 text-cyan-700 px-2 py-0.5 rounded">교육·환경</span>
+                            <span class="text-slate-500 font-bold text-[11px]">연천군</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/35">연천군, 미래 인재 육성 위한 청소년 장학기금 47억원 수여식 개최</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[연천군 = 경기북부일보 이형오 기자] 연천군(통일평생교육원)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;연천군, 미래 인재 육성 위한 청소년 장학기금 47억원 ...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>이형오 (교육환경부)</span>
+                        <a href="/news/35" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-cyan-50 text-cyan-700 px-2 py-0.5 rounded">정치·행정</span>
+                            <span class="text-slate-500 font-bold text-[11px]">파주시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/36">파주시, 지방의회 정례회 개회... 민생 조례안 및 주요 추경안 심의 착수 (상공회의소 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[파주시 = 경기북부일보 정민재 기자] 파주시(상공회의소)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;파주시, 지방의회 정례회 개회... 민생 조례안 및 주요 추...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>정민재 (정치행정부)</span>
+                        <a href="/news/36" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-cyan-50 text-cyan-700 px-2 py-0.5 rounded">경제·산업</span>
+                            <span class="text-slate-500 font-bold text-[11px]">고양시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/37">고양시, 전통시장 현대화 사업 및 온누리상품권 이용 활성화 캠페인 전개 (시청 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[고양시 = 경기북부일보 최승호 기자] 고양시(시청)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;고양시, 전통시장 현대화 사업 및 온누리상품권 이용 활성화 캠페인...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>최승호 (경제산업부)</span>
+                        <a href="/news/37" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-cyan-50 text-cyan-700 px-2 py-0.5 rounded">사회·안전</span>
+                            <span class="text-slate-500 font-bold text-[11px]">가평군</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/38">가평군, 여름철 풍수해 대비 재난안전대책본부 가동... 취약 시설 전수 점검 (군의회 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[가평군 = 경기북부일보 강태수 기자] 가평군(군의회)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;가평군, 여름철 풍수해 대비 재난안전대책본부 가동... 취약 시...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>강태수 (사회이슈부)</span>
+                        <a href="/news/38" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-cyan-50 text-cyan-700 px-2 py-0.5 rounded">문화·체육</span>
+                            <span class="text-slate-500 font-bold text-[11px]">남양주시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/39">남양주시, 생활체육 활성화 위한 권역별 다목적 체육관 및 풋살경기장 준공 (도시공사 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[남양주시 = 경기북부일보 윤도현 기자] 남양주시(도시공사)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;남양주시, 생활체육 활성화 위한 권역별 다목적 체육관 및 ...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>윤도현 (문화체육부)</span>
+                        <a href="/news/39" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-cyan-50 text-cyan-700 px-2 py-0.5 rounded">교육·환경</span>
+                            <span class="text-slate-500 font-bold text-[11px]">구리시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/40">구리시, 맑고 푸른 도심 가꾸기... 탄소중립 도시숲 및 하천 생태공원 조성 완료 (청소년수련관 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[구리시 = 경기북부일보 한지민 기자] 구리시(청소년수련관)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;구리시, 맑고 푸른 도심 가꾸기... 탄소중립 도시숲 및 ...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>한지민 (교육환경부)</span>
+                        <a href="/news/40" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-cyan-50 text-cyan-700 px-2 py-0.5 rounded">정치·행정</span>
+                            <span class="text-slate-500 font-bold text-[11px]">의정부시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/41">의정부시, 공직사회 청렴도 향상 및 투명 행정 실천 결의대회 개최 (교육지원청 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[의정부시 = 경기북부일보 김진우 기자] 의정부시(교육지원청)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;의정부시, 공직사회 청렴도 향상 및 투명 행정 실천 결의...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>김진우 (정치행정부)</span>
+                        <a href="/news/41" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-cyan-50 text-cyan-700 px-2 py-0.5 rounded">경제·산업</span>
+                            <span class="text-slate-500 font-bold text-[11px]">양주시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/42">양주시, 첨단 미래산업 클러스터 유치 및 친환경 신산업 육성 포럼 개최 (문화원 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[양주시 = 경기북부일보 박성현 기자] 양주시(문화원)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;양주시, 첨단 미래산업 클러스터 유치 및 친환경 신산업 육성 포...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>박성현 (경제산업부)</span>
+                        <a href="/news/42" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-cyan-50 text-cyan-700 px-2 py-0.5 rounded">사회·안전</span>
+                            <span class="text-slate-500 font-bold text-[11px]">동두천시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/43">동두천시, 복지 사각지대 발굴 위한 명예사회복지공무원 위촉 및 현장 방문단 출범 (시청 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[동두천시 = 경기북부일보 이형오 기자] 동두천시(시청)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;동두천시, 복지 사각지대 발굴 위한 명예사회복지공무원 위촉 및...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>이형오 (사회이슈부)</span>
+                        <a href="/news/43" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션 8: 최신 추천 기사 (7건) -->
+        <section class="space-y-4 pt-4 border-t border-slate-200">
+            <div class="flex justify-between items-end border-b-2 border-slate-900 pb-2">
+                <h2 class="serif-title font-black text-xl text-slate-900 flex items-center gap-2">
+                    <i class="fas fa-clock text-slate-700"></i> 최신 취재 보도 모음
+                </h2>
+                <a href="/archive/" class="text-xs font-bold text-indigo-600 hover:underline">전체 1,395건 아카이브 ➔</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-slate-100 text-slate-800 px-2 py-0.5 rounded">문화·체육</span>
+                            <span class="text-slate-500 font-bold text-[11px]">포천시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/44">[포천 소식] 포천시, 도민과 함께하는 2008 숲속 힐링 문화축제 성황리 개막 (시의회 보도) - 제53호</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[포천시 = 경기북부일보 정민재 기자] 포천시(시의회)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;[포천 소식] 포천시, 도민과 함께하는 2008 숲속 힐링 문화...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>정민재 (문화체육부)</span>
+                        <a href="/news/44" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-slate-100 text-slate-800 px-2 py-0.5 rounded">교육·환경</span>
+                            <span class="text-slate-500 font-bold text-[11px]">연천군</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/45">연천군, 미래 인재 육성 위한 청소년 장학기금 42억원 수여식 개최</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[연천군 = 경기북부일보 최승호 기자] 연천군(보건의료원)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;연천군, 미래 인재 육성 위한 청소년 장학기금 42억원 수여...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>최승호 (교육환경부)</span>
+                        <a href="/news/45" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-slate-100 text-slate-800 px-2 py-0.5 rounded">정치·행정</span>
+                            <span class="text-slate-500 font-bold text-[11px]">파주시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/46">파주시, 2008년도 자치혁신 및 도민 체감형 행정 서비스 강화 계획 발표 (산업단지관리공단 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[파주시 = 경기북부일보 강태수 기자] 파주시(산업단지관리공단)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;파주시, 2008년도 자치혁신 및 도민 체감형 행정 서...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>강태수 (정치행정부)</span>
+                        <a href="/news/46" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-slate-100 text-slate-800 px-2 py-0.5 rounded">경제·산업</span>
+                            <span class="text-slate-500 font-bold text-[11px]">고양시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/47">고양시, 지역 중소기업 및 소상공인 경영안정자금 23억원 긴급 지원</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[고양시 = 경기북부일보 윤도현 기자] 고양시(환경에너지시설)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;고양시, 지역 중소기업 및 소상공인 경영안정자금 23억원...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>윤도현 (경제산업부)</span>
+                        <a href="/news/47" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-slate-100 text-slate-800 px-2 py-0.5 rounded">사회·안전</span>
+                            <span class="text-slate-500 font-bold text-[11px]">가평군</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/48">가평군, 범죄 취약지구 안심 귀갓길 조성 및 스마트 CCTV 관제망 대폭 확충 (체육회 보도)</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[가평군 = 경기북부일보 한지민 기자] 가평군(체육회)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;가평군, 범죄 취약지구 안심 귀갓길 조성 및 스마트 CCTV 관...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>한지민 (사회이슈부)</span>
+                        <a href="/news/48" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-slate-100 text-slate-800 px-2 py-0.5 rounded">문화·체육</span>
+                            <span class="text-slate-500 font-bold text-[11px]">남양주시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/49">[남양주 소식] 남양주시, 생활체육 활성화 위한 권역별 다목적 체육관 및 풋살경기장 준공 (시청 보도) - 제58호</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[남양주시 = 경기북부일보 김진우 기자] 남양주시(시청)은 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;[남양주 소식] 남양주시, 생활체육 활성화 위한 권역별 다목적...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>김진우 (문화체육부)</span>
+                        <a href="/news/49" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card p-4 sm:p-5 rounded-2xl space-y-2 flex flex-col justify-between bg-white border border-slate-200 hover:border-indigo-300 transition">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs mb-1.5">
+                            <span class="text-[10px] font-bold bg-slate-100 text-slate-800 px-2 py-0.5 rounded">교육·환경</span>
+                            <span class="text-slate-500 font-bold text-[11px]">구리시</span>
+                            <span class="text-slate-300">·</span>
+                            <span class="text-slate-400 text-[11px]">2010-10-09</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug hover:text-indigo-600">
+                            <a href="/news/50">[구리 소식] 구리시, 맑고 푸른 도심 가꾸기... 탄소중립 도시숲 및 하천 생태공원 조성 완료 (시의회 보도) - 제59호</a>
+                        </h3>
+                        <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-1.5">[구리시 = 경기북부일보 박성현 기자] 구리시(시의회)는 2010-10-09 지역 사회의 지속 가능한 발전과 도민 복리 증진을 위해 &#x27;[구리 소식] 구리시, 맑고 푸른 도심 가꾸기... 탄소중립 도...</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-100">
+                        <span>박성현 (교육환경부)</span>
+                        <a href="/news/50" class="text-indigo-600 font-bold hover:underline flex items-center gap-1">
+                            <span>전문 읽기</span>
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -409,10 +1286,9 @@
 
     </main>
 
-    <!-- 5. 정통 언론사 메타 정보 푸터 (E-E-A-T 준수 표준 언론사 푸터 / 백링크 완전 제거) -->
+    <!-- 5. 정통 언론사 메타 정보 푸터 -->
     <footer class="bg-slate-950 text-slate-400 text-xs py-10 border-t-4 border-indigo-600 mt-12">
         <div class="max-w-7xl mx-auto px-4 space-y-6">
-            
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-slate-800 pb-6">
                 <div class="flex items-center gap-3">
                     <span class="serif-title text-xl font-black text-white">KGB NEWS</span>
@@ -420,11 +1296,19 @@
                     <span class="text-slate-300 font-bold">케이지비 뉴스 미디어 그룹</span>
                 </div>
                 <div class="flex flex-wrap gap-4 text-slate-400">
-                    <a href="/archive/" class="hover:text-white">전체기사</a>
+                    <a href="/archive/" class="hover:text-white">전체기사 아카이브</a>
                     <a href="./agreement.html" class="hover:text-white">이용약관</a>
                     <a href="./agreement2.html" class="hover:text-white">개인정보처리방침</a>
                     <a href="./agreement.html" class="hover:text-white">청소년보호정책</a>
                     <a href="./sub.html" class="hover:text-white">기사제보</a>
+                </div>
+            </div>
+
+            <!-- 아카이브 전수 링크 바 -->
+            <div class="bg-slate-900 p-4 rounded-xl space-y-2 border border-slate-800">
+                <span class="text-[11px] font-bold text-amber-400 block">전체 기사 아카이브 페이지네이션 빠른 이동:</span>
+                <div class="flex flex-wrap gap-1.5">
+<a href="/archive/" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">1P</a><a href="/archive/page/2.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">2P</a><a href="/archive/page/3.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">3P</a><a href="/archive/page/4.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">4P</a><a href="/archive/page/5.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">5P</a><a href="/archive/page/6.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">6P</a><a href="/archive/page/7.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">7P</a><a href="/archive/page/8.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">8P</a><a href="/archive/page/9.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">9P</a><a href="/archive/page/10.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">10P</a><a href="/archive/page/11.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">11P</a><a href="/archive/page/12.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">12P</a><a href="/archive/page/13.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">13P</a><a href="/archive/page/14.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">14P</a><a href="/archive/page/15.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">15P</a><a href="/archive/page/16.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">16P</a><a href="/archive/page/17.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">17P</a><a href="/archive/page/18.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">18P</a><a href="/archive/page/19.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">19P</a><a href="/archive/page/20.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">20P</a><a href="/archive/page/21.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">21P</a><a href="/archive/page/22.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">22P</a><a href="/archive/page/23.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">23P</a><a href="/archive/page/24.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">24P</a><a href="/archive/page/25.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">25P</a><a href="/archive/page/26.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">26P</a><a href="/archive/page/27.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">27P</a><a href="/archive/page/28.html" class="px-2.5 py-1 bg-slate-100 hover:bg-indigo-600 hover:text-white rounded text-[11px] font-bold transition text-slate-600">28P</a>
                 </div>
             </div>
 
@@ -439,7 +1323,6 @@
                     <p>Copyright © 2008-2026 KGB NEWS Media Group. All rights reserved.</p>
                 </div>
             </div>
-
         </div>
     </footer>
 
