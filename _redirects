@@ -1,39 +1,45 @@
 # ========================================================
-# KGBNEWS.KR Canonical & 404 Elimination Rules
+# KGBNEWS.KR Canonical & 301 Redirect Rules
 # ========================================================
 
-# 1. Legacy Archives & Index Direct 301
-/archive/history_* /archive/ 301
-/archive/index.html /archive/ 301
+# 1. Archive to News Path 301 Redirects
+/archive/page/:splat /news/page/:splat 301
+/archive/page/* /news/ 301
+/archive/* /news/ 301
+/archive /news/ 301
+
+# 2. Legacy Archives & Index Direct 301
+/archive/history_* /news/ 301
+/archive/index.html /news/ 301
 /index.php / 301
 
-# 2. Legacy Base 404 Endpoints Elimination
-/search.html /archive/ 301
+# 3. Legacy Base 404 Endpoints Elimination
+/search.html /news/ 301
 /newsletter.html / 301
 /notice_popup.html /bbs.html 301
 /last_poll.html / 301
 
-# 3. Company & Terms
+# 4. Company & Terms
 /company/* /agreement.html 301
 
-# 4. Old Dynamic Endpoints (newnews)
+# 5. Old Dynamic Endpoints (newnews)
 /newnews/print.php /newnews/print.html 200
 /newnews/* / 301
 
-# 5. Old BBS Endpoints
+# 6. Old BBS Endpoints
 /bbs/* /bbs.html 301
 
-# 6. Old ASP Endpoints (nm)
+# 7. Old ASP Endpoints (nm)
 /nm/atc/view.asp /report_view.html 200
 /nm/atc/* /sub.html 200
 /nm/bbs/* /bbs.html 200
 /nm/mem/* /agreement.html 301
 /nm/* /sub.html 200
 
-# 7. Ad Link, Skins, Images, Journalists
+# 8. Ad Link, Skins, Images, Journalists
 /ad_link.php /report_view.html 200
 /default.html /default.html 200
-/news/journalist/* /archive/ 301
+/news/journalist/* /news/ 301
 /news_skin/* / 301
 /data/* / 301
 /imgdata/* / 301
